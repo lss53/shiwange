@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!-- Generator: Adobe Illustrator 18.0.0, SVG Export Plug-In. SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+    viewBox="0 0 1024 1024" style="enable-background:new 0 0 1024 1024;" xml:space="preserve">
+    <g id="dog">
+        <g>
+            <rect x="716" y="460" style="fill:#020202;" width="52" height="52"/>
+            <rect x="870" y="512" style="fill:#020202;" width="52" height="52"/>
+        </g>
+        <rect x="768" y="613.924" style="fill:#FF5425;" width="51.2" height="51.676"/>
+        <g>
+            <rect x="154" y="256" style="fill:#BD903A;" width="50" height="52"/>
+            <path style="fill:#BD903A;" d="M820,512v-51.2V410h-52v-52h-52v-50h-50v50h-52v51.6V460h-50.8H512h-51.2h-51.2h-51.2h-51.2H256
+                h-51.2H154v-50.4v-51.2V308H102v50.4v51.2v51.2V512v51.2V614h52v51.6v51.2V768v51.2v51.2V922h50v-51.6v-51.2V768v-52h52h51.2h51.2
+                h51.2h51.2H512v52v51.2v51.2V922h52v-51.6v-51.2V768v-52h50.4H666v-50h50v-52h52h51.2H870v-50.8V512H820z M768,512h-52v-52h52V512
+                z"/>
+        </g>
+        <g>
+            <polygon style="fill:#8C6E26;" points="256,768 256,819.2 256,870.4 256,922 308,922 308,870.4 308,819.2 308,768 308,716 
+                256,716        "/>
+            <polygon style="fill:#8C6E26;" points="614,716 614,768 614,819.2 614,870.4 614,922 666,922 666,870.4 666,819.2 666,768 
+                666,716        "/>
+        </g>
+    </g>
+    <g id="Layer_1">
+    </g>
+</svg>
