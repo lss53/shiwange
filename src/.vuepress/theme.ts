@@ -13,7 +13,7 @@ export default hopeTheme({
 
   repo: "lss53/shiwange",
 
-  docsDir: "docs/src",
+  docsDir: "src",
 
   blog: {
     medias: {
