@@ -173,11 +173,12 @@ export default hopeTheme({
         },
       },
     ],
-    sub: true,  //启用下角标
+    sub: true,  // 启用下角标
     sup: true,  // 启用上角标
     tabs: true,  // 选项卡
     tasklist: true, // 任务列表
     vPre: true,  // VuePress1 的 v-pre 容器
+    // markmap: true, // 思维导图，运行环境非常重，不推荐使用
 
     // uncomment these if you need TeX support
     // 数学公式

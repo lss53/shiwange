@@ -8,9 +8,20 @@ export const zhSidebar = sidebar({
   // "/bionote/xone/": "structure",
   // "/bionote/xtwo/": "structure",
   // "/bionote/xtre/": "structure",
+  
+  // 笔记
   "/bionote/": "structure",
+
+  //真题
   "/bioexam/": "structure", 
 
-  "/windows/software/": "structure",  
+  // 软件
+  "/windows/software/": "structure", 
+  
+  // 建站 
   "/buildwebsite/": "structure",
+  
+  // 日常 
+  "/life/": "structure",
+  
 });

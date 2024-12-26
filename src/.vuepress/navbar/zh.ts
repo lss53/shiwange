@@ -3,9 +3,7 @@ import { navbar } from "vuepress-theme-hope";
 export const zhNavbar = navbar([
   // 主页
   "/",
-
-  // 高中生物笔记导航栏
-  // "/bionote/",  
+  
   {
     text: "高中生物", 
     icon: "book", 
@@ -25,6 +23,7 @@ export const zhNavbar = navbar([
       },      
     ],
   },
+  
   {
     text: "折腾",
     icon: "fa-solid fa-screwdriver-wrench",
@@ -49,5 +48,8 @@ export const zhNavbar = navbar([
       },
     ],
   },
+  
+  // 日常
+  "/life/",
 
 ]);

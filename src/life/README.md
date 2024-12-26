@@ -1,6 +1,6 @@
 ---
-title: 高中生物真题
-icon: book
+title: 日常
+icon: fa-solid fa-list-check
 article: false
 index: false
 comment: false

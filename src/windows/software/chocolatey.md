@@ -1,6 +1,6 @@
 ---
-title: Chocolatey：一款 GitHub 星标 10k+ 的 Windows 命令行软件管理器，好用到爆！
-shortTitle: Chocolatey：Windows软件管理神器
+title: Chocolatey：一款 GitHub 上星标 10k+ 的 Windows 命令行软件管理器
+shortTitle: Chocolatey
 date: 2024-12-22
 icon: fa-solid fa-toolbox
 order: 1
@@ -12,13 +12,13 @@ tag:
 
 ### 传统安装方式
 
-在不晓得 chocolatey 之前，我是这样安装软件和配置环境变量的。
+在不晓得 [Chocolatey](#Chocolatey) 之前，我是这样安装软件和配置环境变量的：
 
-1. 按 `Windows 键 + E` 打开文件资源管理器，输入 `%HOMEPATH%` 回车打开用户名目录，新建路径为 `%HOMEPATH%\Me\bin\script` ，下载[Node.js的预构建二进制文件](https://nodejs.org/zh-cn/download/prebuilt-binaries)，如 `node-v22.12.0-win-x64.zip`，右键单击它，选择`用 WinRAR 打开`，把 `node-v22.12.0-win-x64` 文件夹拖到 `%HOMEPATH%\Me\bin\script` 里面。
+按 `Windows 键 + E` 打开文件资源管理器，输入 `%HOMEPATH%` 回车打开用户名目录，新建路径为 `%HOMEPATH%\Me\bin\script` ，下载[Node.js的预构建二进制文件](https://nodejs.org/zh-cn/download/prebuilt-binaries)，如 `node-v22.12.0-win-x64.zip`，右键单击它，选择`用 WinRAR 打开`，把 `node-v22.12.0-win-x64` 文件夹拖到 `%HOMEPATH%\Me\bin\script` 里面。
 
-2. 点击任务栏上的搜索图标，输入`高级系统设置`按回车，在新窗口`系统属性`中点击`环境变量`，在`系统变量`下，找到变量`Path`，选择并单击`编辑`（提示：如果没有变量`Path`，请单击`新建`）。在新窗口`编辑环境变量`中点击`新建`，输入`%HOMEPATH%\Me\bin\script`并按`确定`。如果有cmd或shell终端（命令）窗口，请重新启动它们。
+点击任务栏上的搜索图标，输入`高级系统设置`按回车，在新窗口`系统属性`中点击`环境变量`，在`系统变量`下，找到变量`Path`，选择并单击`编辑`（提示：如果没有变量`Path`，请单击`新建`）。在新窗口`编辑环境变量`中点击`新建`，输入`%HOMEPATH%\Me\bin\script`并按`确定`。如果有cmd或shell终端（命令）窗口，请重新启动它们。
 
-3. 点击任务栏上的搜索图标，输入 `cmd` ，点击出现的选项`以管理员身份运行`，输入命令 `node -v` 按回车，显示 `v22.12.0` 表示配置成功。
+点击任务栏上的搜索图标，输入 `cmd` ，点击出现的选项`以管理员身份运行`，输入命令 `node -v` 按回车，显示 `v22.12.0` 表示配置成功。
 
 传统的安装方式非常耗时且非常低效，用 `Chocolatey` 在命令窗口安装软件，一条命令搞定程序安装和配置环境变量。
 

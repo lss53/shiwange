@@ -38,12 +38,12 @@ projects:
   - icon: book
     name: 高中生物笔记
     desc: 适合于基础知识比较薄弱的同学
-    link: https://vuejs.press/zh/
+    link: /bionote/
 
   - icon: friend
     name: 个人网盘
     desc: 最新人教版高中生物音频等
-    link: https://pan..211777.xyz/
+    link: https://pan.211777.xyz/
 
   - icon: /logo.svg
     name: 个人导航

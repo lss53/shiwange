@@ -2,7 +2,7 @@
 title: 静态徽章
 date: 2024-12-24
 icon: fas fa-shield
-# order: 3
+order: 3
 category:
   - Blog
 tag:
@@ -17,7 +17,7 @@ tag:
 
 - 打开 [Shields.io](https://shields.io/badges)，找到网页右侧的`badgeContent`— path，输入 `build-passing-brightgreen` （[路径参数](#路径参数)），点`Execute`，等待`静态徽章`出现。
 
-- 复制你需要的格式(URL/Markdown/rSt/AsciiDOC/HTML)代码。
+- 复制你需要的格式代码（URL/Markdown/rSt/AsciiDOC/HTML）。
 
 ::: info
 什么是路径参数呢？
