@@ -95,10 +95,10 @@ apps:
         name: bilibili
 ```
 
-- 在 `Hugomods` 搜索 `bilibili` 会显示三个结果，对应关系如下表，实测前两组可用，第三组不知怎么用？也许是对应关系搞错了！
+- 在 `Hugomods` 搜索 `bilibili` 会显示三个结果，对应关系如下表。`outline/brand-bilibili`要加英文单引号或双引号后，才能在 YAML 中起作用。
 
 |vendor|name|
 |:--|:--|
 |font-awesome-brands|bilibili|
 |simple-icons|bilibili|
-|tabler|outline/brand-bilibili|
+|tabler|'outline/brand-bilibili'|
