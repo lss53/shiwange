@@ -65,7 +65,7 @@ export default hopeTheme({
     "/": {
         author: {
           name: "诗往哥",
-          url: "https://211777.xyz",
+          url: "/intro.html",
         },
       // navbar（导航栏）
       navbar: zhNavbar,
@@ -92,7 +92,7 @@ export default hopeTheme({
     "/en/": {
         author: {
           name: "Shiwange",
-          url: "https://211777.xyz",
+          url: "/en/intro.html",
         },
       // navbar
       navbar: enNavbar,

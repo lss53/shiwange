@@ -1,6 +1,6 @@
 ---
-title: 高中生物笔记
-icon: book
+title: Hugo
+icon: fa-brands fa-golang
 article: false
 index: false
 comment: false

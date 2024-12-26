@@ -5,39 +5,50 @@ export const zhNavbar = navbar([
   "/",
 
   // 高中生物笔记导航栏
-  "/bionote/",  
-
+  // "/bionote/",  
   {
-    text: "博文",
-    icon: "book",
-    prefix: "/posts/",
+    text: "高中生物", 
+    icon: "book", 
+    //prefix: "/如果是三层目录，这里填第一层目录/",
     children: [
       {
-        text: "电脑软件",
-        icon: "screwdriver-wrench",
-        prefix: "software/",
-        children: [
-          { text: "佳软推荐", icon: "screwdriver-wrench", link: "README.md" },
-
-        ],
-      },
+        text: "笔记",
+        // icon: "book", 
+        prefix: "/bionote/", 
+        children: ["one/", "two/", "xone/", "xtwo/", "xtre/"], 
+      }, 
       {
-        text: "构建网站",
-        icon: "palette",
-        prefix: "buildwebsite/",
-        children: [
-          { text: "VuePress", icon: "fab fa-vuejs", link: "vuepress.md" },
-          { text: "Hugo", icon: "compass", link: "hugo.md" },
-          
-        ],
-      },
-
-
+        text: "真题",
+        // icon: "book", 
+        prefix: "/bioexam/", 
+        children: ["2024/"], 
+      },      
     ],
   },
   {
-    text: "V2 文档",
-    icon: "file-word",
-    link: "https://theme-hope.vuejs.press/zh/",
+    text: "折腾",
+    icon: "fa-solid fa-screwdriver-wrench",
+    children: [
+      {
+        text: "Windows",
+        // icon: "fa-brands fa-windows",
+        prefix: "/windows/",
+        children: [
+          { text: "软件", icon: "fa-solid fa-gear", link: "software/" }, 
+        ],
+      },
+      {
+        text: "建站", 
+        icon: "palette",
+        prefix: "/buildwebsite/", 
+        children: [
+          { text: "静态徽章", icon: "fas fa-shield", link: "badge" },
+          { text: "Vuepress", icon: "fab fa-vuejs", link: "vuepress/" }, 
+          { text: "Hugo", icon: "fa-brands fa-golang", link: "hugo/" },
+
+        ], 
+      },
+    ],
   },
+
 ]);

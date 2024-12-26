@@ -5,14 +5,14 @@ export const enNavbar = navbar([
   {
     text: "Articles",
     icon: "book",
-    prefix: "/en/posts/",
+    prefix: "/en/",
     children: [
       {
-        text: "Software",
-        icon: "screwdriver-wrench",
-        prefix: "software/",
+        text: "Windows",
+        // icon: "windows",
+        prefix: "windows/",
         children: [
-          { text: "Common", icon: "screwdriver-wrench", link: "README.md" },
+          { text: "Software", icon: "fa-solid fa-gear", link: "software/" },
           
         ],
       },

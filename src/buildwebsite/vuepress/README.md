@@ -1,6 +1,6 @@
 ---
-title: 高中生物笔记
-icon: book
+title: Vuepress
+icon: fab fa-vuejs
 article: false
 index: false
 comment: false

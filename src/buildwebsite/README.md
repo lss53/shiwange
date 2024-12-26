@@ -1,6 +1,6 @@
 ---
-title: 高中生物笔记
-icon: book
+title: 建站
+icon: palette
 article: false
 index: false
 comment: false
