@@ -42,10 +42,9 @@ export const zhNavbar = navbar([
         icon: "palette",
         prefix: "/buildwebsite/", 
         children: [
-          { text: "静态徽章", icon: "fas fa-shield", link: "badge" },
-          { text: "Vuepress", icon: "fab fa-vuejs", link: "vuepress/" }, 
           { text: "Hugo", icon: "fa-brands fa-golang", link: "hugo/" },
-
+          { text: "Vuepress", icon: "fab fa-vuejs", link: "vuepress/" }, 
+          { text: "静态徽章", icon: "fas fa-shield", link: "badge" },
         ], 
       },
     ],
