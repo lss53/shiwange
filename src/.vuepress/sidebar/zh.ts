@@ -13,10 +13,13 @@ export const zhSidebar = sidebar({
   "/bionote/": "structure",
 
   //真题
-  "/bioexam/": "structure", 
+  "/bioexam/": "structure",
 
   // 软件
-  "/windows/software/": "structure", 
+  "/windows/software/": "structure",
+  
+  // Office
+  "/office/": "structure",
   
   // 建站 
   "/buildwebsite/": "structure",
