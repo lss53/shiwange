@@ -15,7 +15,7 @@ tagline: Better do it today than tomorrow.
 actions:
   - text: Articles
     icon: book
-    link: ./posts/
+    link: ./windows/
     type: primary
 
   - text: Intro Page
