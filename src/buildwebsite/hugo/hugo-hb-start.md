@@ -317,7 +317,7 @@ apps:
 
 :::
 
-- `url`处添加网址后，能获取`favicon`就显示，不能获取`favicon`就显示第一个字符串。
+- `url`处添加网址后，能获取`favicon`就显示，不能获取`favicon`就显示第一个汉字或字母。
 
 - 也可以自定义`icon`，以 `menus.yaml` 举例，代码如下，其中的`icon`可以[Hugomods](https://icons.hugomods.com/#search) 中找。
 

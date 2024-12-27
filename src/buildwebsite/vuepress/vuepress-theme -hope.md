@@ -57,7 +57,7 @@ actions:
 
 ### 项目命令
 
-运行路径：`F:\tmp\docs` 。常用命令项目如下：
+运行路径：`F:\tmp\docs` 。常用命令如下：
 
 ::: tabs#shell
 
