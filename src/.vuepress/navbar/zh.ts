@@ -13,18 +13,14 @@ export const zhNavbar = navbar([
       // 笔记
       {
         text: "笔记",
-        // icon: "book",  //这里设置了也不显示图标
-        prefix: "/bionote/",
         // 这样设置，直接显示 one/README.md、two/README.md……的标题和图标
-        children: ["one/", "two/", "xone/", "xtwo/", "xtre/"], 
+        children: ["bionoteone/", "bionotetwo/", "bionotexone/", "bionotextwo/", "bionotextre/"], 
       },
       
       // 真题
       {
         text: "真题",
-        // icon: "book", 
-        prefix: "/bioexam/", 
-        children: ["2024/"], 
+        children: ["bioexam24/"], 
       },      
     ],
   },
@@ -35,37 +31,43 @@ export const zhNavbar = navbar([
     icon: "fas fa-screwdriver-wrench",
     children: [
       
-      // Windows
-      {
-        text: "Windows",
-        // icon: "fab fa-windows",
-        prefix: "/windows/",
-        children: ["software/"],
-      },
+       // 建站
+      "buildwebsite/", 
       
-      // Office
+      // microsoft
       {
-        text: "Office",
-        prefix: "/office/",
+        text: "微软", 
         children: [
+          "windows/", 
+          "365/", 
           // 这样设置可以覆盖 365/README.md 的标题和图标
-          { text: "365", icon: "fab fa-microsoft", link: "365/"}, 
-        ], 
-        
+          // { text: "365", icon: "fab fa-microsoft", link: "365/"},
+          ],
       },
       
-      // 建站
+      // 软件
       {
-        text: "建站", 
-        icon: "palette",
-        prefix: "/buildwebsite/", 
-        children: ["hugo/", "vuepress/", "badge"],
+        text: "软件",
+        children: ["apps/", "software/"], 
       },
       
     ],
   },
   
   // 日常
-  "/life/",
+  {
+    text: "日常",
+    icon: "fas fa-list-check",
+    children: [
+      // 指南（攻略或教程）
+      {
+        text: "攻略", 
+        icon:"fas fa-lightbulb", 
+        link: "guide/",  
+      }, 
+      
+    ], 
+  }, 
+  
 
 ]);

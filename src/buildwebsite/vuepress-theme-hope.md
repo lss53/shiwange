@@ -1,9 +1,9 @@
 ---
 title: Vuepress + Hope 主题构建博客
 shortTitle: 构建博客
-date: 2024-12-22
+date: 2024-12-24
 icon: fa-solid fa-blog
-order: 1
+order: 2
 category:
   - Blog
 tag:

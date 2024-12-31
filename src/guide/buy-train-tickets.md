@@ -4,7 +4,7 @@ date: 2024-12-26
 icon: fas fa-ticket
 order: 1
 category:
-  - 小技巧
+  - 攻略
 tag:
   - 火车票
 ---

@@ -1,6 +1,6 @@
 ---
-title: Hugo
-icon: fa-brands fa-golang
+title: Windows 软件
+icon: fas fa-desktop
 article: false
 index: false
 comment: false

@@ -26,7 +26,7 @@ color: var(--banner-text)
 logo: logo.svg
 actions:
   - text: Chocolatey
-    link: ../../windows/software/chocolatey.html
+    link: ../software/chocolatey.html
 ```
 
 ### 克隆仓库

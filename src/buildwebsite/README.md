@@ -1,6 +1,6 @@
 ---
 title: 建站
-icon: palette
+icon: fas fa-signs-post
 article: false
 index: false
 comment: false
