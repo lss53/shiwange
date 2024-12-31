@@ -28,7 +28,7 @@ export const zhNavbar = navbar([
   // 折腾
   {
     text: "折腾",
-    icon: "fas fa-screwdriver-wrench",
+    icon: "fas fa-code",
     children: [
       
        // 建站
