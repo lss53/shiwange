@@ -4,9 +4,9 @@ export const enSidebar = sidebar({
   "/en/": [
     "",
     {
-      text: "Articles",
-      icon: "book",
-      prefix: "windows/",
+      text: "Software",
+      icon: "fas fa-desktop",
+      prefix: "software/",
       children: "structure",
     },
     "intro",

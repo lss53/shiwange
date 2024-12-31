@@ -9,7 +9,7 @@ export const enNavbar = navbar([
     children: [
       {
         text: "Windows",
-        prefix: "windows/",
+        // prefix: "windows/",
         children: ["software/"],
       },
 
