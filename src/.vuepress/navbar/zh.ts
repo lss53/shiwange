@@ -8,7 +8,6 @@ export const zhNavbar = navbar([
   {
     text: "高中生物", 
     icon: "book", 
-    //prefix: "/如果是三层目录，这里填第一层目录/",
     children: [
       // 笔记
       {
@@ -16,7 +15,6 @@ export const zhNavbar = navbar([
         // 这样设置，直接显示 one/README.md、two/README.md……的标题和图标
         children: ["bionoteone/", "bionotetwo/", "bionotexone/", "bionotextwo/", "bionotextre/"], 
       },
-      
       // 真题
       {
         text: "真题",
@@ -30,10 +28,8 @@ export const zhNavbar = navbar([
     text: "折腾",
     icon: "fas fa-code",
     children: [
-      
        // 建站
       "buildwebsite/", 
-      
       // microsoft
       {
         text: "微软", 
@@ -44,7 +40,6 @@ export const zhNavbar = navbar([
           // { text: "365", icon: "fab fa-microsoft", link: "365/"},
           ],
       },
-      
       // 软件
       {
         text: "软件",
