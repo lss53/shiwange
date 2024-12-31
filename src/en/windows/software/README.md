@@ -1,6 +1,6 @@
 ---
 title: Software
-icon: fa-solid fa-gear
+icon: fas fa-desktop
 article: false
 index: false
 comment: false

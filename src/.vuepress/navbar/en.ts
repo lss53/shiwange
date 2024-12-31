@@ -9,12 +9,8 @@ export const enNavbar = navbar([
     children: [
       {
         text: "Windows",
-        // icon: "windows",
         prefix: "windows/",
-        children: [
-          { text: "Software", icon: "fa-solid fa-gear", link: "software/" },
-          
-        ],
+        children: ["software/"],
       },
 
     ],
