@@ -23,9 +23,9 @@ cover: /assets/images/cover3.jpg
   </a>
   <a href="https://www.github.com/" target="_blank" rel="noopener noreferrer">
     <img class="nozoom" src="https://img.shields.io/badge/GitHub-blue?logo=github&logoColor=fff&labelColor=555">
+  </a>    
   <a href="https://netlify.com/" target="_blank" rel="noopener noreferrer">
     <img class="nozoom" src="https://img.shields.io/badge/Netlify-blue?logo=netlify&logoColor=fff&labelColor=555">
-  </a>
   </a>
   <a href="https://pages.cloudflare.com/" target="_blank" rel="noopener noreferrer">
     <img class="nozoom" src="https://img.shields.io/badge/Cloudflare%20Pages-blue?logo=cloudflarepages&logoColor=fff&labelColor=555">
