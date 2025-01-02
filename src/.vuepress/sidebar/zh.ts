@@ -12,8 +12,8 @@ export const zhSidebar = sidebar({
   ], 
   
   // 高中生物笔记侧边栏
-  "/bionoteone/": [
-    // "" /* /bionoteone/ */, 
+  "/bioone/": [
+    // "" /* /bioone/ */, 
     {
       text: "必修1分子与细胞", 
       icon: "book", 
@@ -21,7 +21,7 @@ export const zhSidebar = sidebar({
     }, 
   ], 
 
-  "/bionotetwo/": [
+  "/biotwo/": [
     {
       text: "必修2遗传与进化", 
       icon: "book", 
@@ -29,7 +29,7 @@ export const zhSidebar = sidebar({
     }, 
   ], 
 
-  "/bionotexone/": [
+  "/bioxone/": [
     {
       text: "选必1稳态与调节", 
       icon: "book", 
@@ -37,7 +37,7 @@ export const zhSidebar = sidebar({
     }, 
   ], 
 
-  "/bionotextwo/": [
+  "/bioxtwo/": [
     {
       text: "选必2生物与环境", 
       icon: "book", 
@@ -45,7 +45,7 @@ export const zhSidebar = sidebar({
     }, 
   ], 
 
-  "/bionotextre/": [
+  "/bioxtre/": [
     {
       text: "选必3生物技术与工程", 
       icon: "book", 
@@ -99,7 +99,7 @@ export const zhSidebar = sidebar({
   ], 
 
   // 建站 
-  "/buildwebsite/": "structure",
+  "/website/": "structure",
   
   
 });

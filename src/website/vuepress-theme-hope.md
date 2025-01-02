@@ -157,7 +157,8 @@ footer: '主题使用 <a href="https://theme-hope.vuejs.press/zh/" target="_blan
 ::: info
 
 - [指南→导航栏](https://theme-hope.vuejs.press/zh/guide/layout/navbar.html) 
-- [“Theme Hope文档”导航栏配置](https://github.com/vuepress-theme-hope/vuepress-theme-hope/blob/main/docs/theme/src/.vuepress/navbar/zh.ts)
+- ["Theme Hope文档"导航栏配置](https://github.com/vuepress-theme-hope/vuepress-theme-hope/blob/main/docs/theme/src/.vuepress/navbar/zh.ts)
+- ["Mister-Hope"导航栏配置](https://github.com/Mister-Hope/Mister-Hope.github.io/blob/main/src/.vuepress/navbar.ts)
 :::
 
 ### 侧边栏
@@ -171,7 +172,8 @@ footer: '主题使用 <a href="https://theme-hope.vuejs.press/zh/" target="_blan
 
 ::: info
 - [指南→侧边栏](https://theme-hope.vuejs.press/zh/guide/layout/sidebar.html) 
-- [“Theme Hope文档”侧边栏配置](https://github.com/vuepress-theme-hope/vuepress-theme-hope/blob/main/docs/theme/src/.vuepress/sidebar/zh.ts)
+- ["Theme Hope文档"侧边栏配置](https://github.com/vuepress-theme-hope/vuepress-theme-hope/blob/main/docs/theme/src/.vuepress/sidebar/zh.ts)
+- ["Mister-Hope"侧边栏配置](https://github.com/Mister-Hope/Mister-Hope.github.io/blob/main/src/.vuepress/sidebar)
 :::
 
 ### 项目结构
@@ -180,6 +182,15 @@ footer: '主题使用 <a href="https://theme-hope.vuejs.press/zh/" target="_blan
 
 ::: info
 - [快速上手→项目结构](https://theme-hope.vuejs.press/zh/get-started/structure.html)
+:::
+
+### 评论
+
+Giscus 是一个基于 GitHub Discussion 的评论系统，启用简便。
+
+::: info
+[指南→评论#Giscus](https://theme-hope.vuejs.press/zh/guide/feature/comment.html#giscus)
+
 :::
 
 ## 推送到 GitHub

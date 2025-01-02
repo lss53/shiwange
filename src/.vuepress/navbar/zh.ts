@@ -13,12 +13,12 @@ export const zhNavbar = navbar([
       {
         text: "笔记",
         // 这样设置，直接显示 one/README.md、two/README.md……的标题和图标
-        children: ["bionoteone/", "bionotetwo/", "bionotexone/", "bionotextwo/", "bionotextre/"], 
+        children: ["bioone/", "biotwo/", "bioxone/", "bioxtwo/", "bioxtre/"], 
       },
       // 真题
       {
         text: "真题",
-        children: ["bioexam24/"], 
+        children: ["bio24/"], 
       },      
     ],
   },
@@ -29,7 +29,7 @@ export const zhNavbar = navbar([
     icon: "fas fa-code",
     children: [
        // 建站
-      "buildwebsite/", 
+      "website/", 
       // microsoft
       {
         text: "微软", 
@@ -64,5 +64,6 @@ export const zhNavbar = navbar([
     ], 
   }, 
   
+  "/movies", 
 
 ]);
