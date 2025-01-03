@@ -42,7 +42,7 @@ jobs:
         with:
           # 思路：本仓库为源码，自动构建部署到另外的仓库
           # repo：你要部署的仓库地址，格式为“GitHub用户名/仓库名”。
-          # GH_RRPO 需要在当前仓库 secrets
+          # GH_RRPO 需要在当前仓库 Secrets and variables -> Actions  -> Secrets -> New repository secret
           repo: ${{ secrets.GH_RRPO }}
           # 部署到 main 分支
           target_branch: main          
@@ -50,5 +50,5 @@ jobs:
           build_dir: src/.vuepress/dist
         env:
           # @see https://docs.github.com/cn/actions/reference/authentication-in-a-workflow#about-the-github_token-secret
-          #  GH_PAGES_TOKEN 是当前仓库 secrets 的 token(个人令牌)，需要在 GitHub 申请
+          #  GH_PAGES_TOKEN(个人令牌) 需要提前申请好，在当前仓库设置
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
