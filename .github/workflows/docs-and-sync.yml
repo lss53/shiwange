@@ -64,7 +64,11 @@ jobs:
     - name: Sync to Gitee
       uses: Yikun/hub-mirror-action@v1.4
       with:
+        # @see https://github.com/Yikun/hub-mirror-action?tab=readme-ov-file
+        # 认真阅读：参数详解 -> 必选参数 和 可选参数
         src: github/lss53  # 替换为源端(GitHub)账户名
         dst: gitee/lss53    # 替换为目的端(Gitee)账户名
+        dst_key: ${{ secrets.GITEE_PRIVATE_KEY }}
+        dst_token: ${{ secrets.GITEE_TOKEN }}
         static_list: "shiwange"
-        dst_token: ${{ secrets.GITEE_TOKEN }}   
+        debug: true   
