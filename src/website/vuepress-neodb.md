@@ -8,6 +8,7 @@ category:
   - Blog
 tag:
   - Vuepress
+  - NeoDB
 ---
 
 ## 创建 NeoDB Token

@@ -32,5 +32,5 @@ highlights:
 
 
 copyright: false
-footer: Powered by <a href="https://vuepress.vuejs.org/zh/" target="_blank">VuePress</a> | MIT Licensed, Copyright © 2024-present Shiwange
+footer: Powered by <a href="https://vuepress.vuejs.org/zh/" target="_blank">VuePress</a> | MIT Licensed, Copyright © 2021-present Shiwange
 ---

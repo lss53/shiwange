@@ -3,7 +3,7 @@ title: Vuepress + Hope 主题构建博客
 shortTitle: 构建博客
 date: 2024-12-24
 icon: fa-solid fa-blog
-order: 2
+order: 3
 category:
   - Blog
 tag:
@@ -18,7 +18,7 @@ color: var(--banner-text)
 logo: logo.svg
 actions:
   - text: Chocolatey
-    link: ../software/chocolatey.html
+    link: ../software/chocolatey.md
 ```
 
 ## 准备工作
