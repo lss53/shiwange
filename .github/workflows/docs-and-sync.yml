@@ -64,8 +64,9 @@ jobs:
 
       # 同步到 Gitee
       - name: Sync to Gitee
-        uses: mirror-action@v2
+        uses: wearerequired/git-mirror-action@master
+        env:
+          SSH_PRIVATE_KEY: ${{ secrets.GITEE_TOKEN }}
         with:
-          source-repo: 'https://github.com/${{ github.repository_owner }}/${{ github.repository }}.git'
-          destination-repo: 'https://gitee.com/lss53/shiwange.git'
-          destination-token: ${{ secrets.GITEE_TOKEN }}
+          source-repo: "git@github.com:${{ github.repository }}.git"
+          destination-repo: "git@gitee.com:lss53/shiwange.git"
