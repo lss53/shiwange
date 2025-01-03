@@ -42,8 +42,8 @@ jobs:
         with:
           # 思路：本仓库为源码，自动构建部署到另外的仓库
           # repo：你要部署的仓库地址，格式为“GitHub用户名/仓库名”。
-          # GH_RRPO 需要在当前仓库 Secrets and variables -> Actions  -> Secrets -> New repository secret
-          repo: ${{ secrets.GH_RRPO }}
+          # GH_PAT 需要在当前仓库 Secrets and variables -> Actions  -> Secrets -> New repository secret
+          repo: ${{ secrets.GH_PAT }}
           # 部署到 main 分支
           target_branch: main          
           # 部署目录为 VuePress 的默认输出目录
