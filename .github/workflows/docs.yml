@@ -1,4 +1,4 @@
-name: docs and Sync
+name: docs and sync
 
 on:
   # 每当 push 到 main 分支时触发部署
@@ -69,4 +69,3 @@ jobs:
           source-repo: 'https://github.com/${{ github.repository_owner }}/${{ github.repository }}.git'
           destination-repo: 'https://gitee.com/lss53/shiwange.git'
           destination-token: ${{ secrets.GITEE_TOKEN }}
-          
