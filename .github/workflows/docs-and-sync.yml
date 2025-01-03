@@ -64,9 +64,8 @@ jobs:
 
       # 同步到 Gitee
       - name: Sync to Gitee
-        uses: wearerequired/git-mirror-action@master
-        env:
-          SSH_PRIVATE_KEY: ${{ secrets.GITEE_TOKEN }}
-        with:
-          source-repo: "git@github.com:${{ github.repository }}.git"
-          destination-repo: "git@gitee.com:lss53/shiwange.git"
+      uses: Yikun/hub-mirror-action@v1.4
+      with:
+        src: github/lss53/shiwange  # 替换为你的 GitHub 仓库路径
+        dst: gitee/lss53/shiwange    # 替换为你的 Gitee 仓库路径
+        dst_token: ${{ secrets.GITEE_TOKEN }}   
