@@ -1,4 +1,4 @@
-name: docs
+name: docs and Sync
 
 on:
   # 每当 push 到 main 分支时触发部署
@@ -53,3 +53,20 @@ jobs:
           # Personal access tokens(个人令牌) 需要提前申请好，在当前仓库设置，如下：
           # Name *: GH_PAGES_TOKEN, Secret *: ghp_xxxxxxx
           GITHUB_TOKEN: ${{ secrets.GH_PAGES_TOKEN }}
+
+  sync:
+    runs-on: ubuntu-latest
+    needs: docs  # 依赖 docs 任务完成
+    steps:
+      # 拉取代码
+      - name: Checkout GitHub repository
+        uses: actions/checkout@v4
+
+      # 同步到 Gitee
+      - name: Sync to Gitee
+        uses: mirror-action@v2
+        with:
+          source-repo: 'https://github.com/${{ github.repository_owner }}/${{ github.repository }}.git'
+          destination-repo: 'https://gitee.com/lss53/shiwange.git'
+          destination-token: ${{ secrets.GITEE_TOKEN }}
+          
