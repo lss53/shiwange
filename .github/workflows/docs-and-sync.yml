@@ -1,4 +1,4 @@
-name: docs and sync
+name: Docs and Sync
 
 on:
   # 每当 push 到 main 分支时触发部署
@@ -12,15 +12,16 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v4
+      - name: Checkout code
+        uses: actions/checkout@v4
         with:
           # “最近更新时间” 等 git 日志相关信息，需要拉取全部提交记录
           fetch-depth: 0
 
-      - name: 设置 pnpm
+      - name: Set up pnpm
         uses: pnpm/action-setup@v4
 
-      - name: 设置 Node.js
+      - name: Set up Node.js
         uses: actions/setup-node@v4
         with:
           # 选择要使用的 node 版本
@@ -28,42 +29,34 @@ jobs:
           # 缓存 pnpm 依赖
           cache: pnpm
 
-      - name: 安装依赖
+      - name: Install dependencies
         run: pnpm install --frozen-lockfile
 
-      # 运行构建脚本
-      - name: 构建 VuePress 站点
+      - name: Build VuePress site
         run: pnpm docs:build
 
-      # 查看 workflow 的文档来获取更多信息
-      # @see https://github.com/crazy-max/ghaction-github-pages
-      - name: 部署到 GitHub Pages
+      - name: Deploy to GitHub Pages
         uses: crazy-max/ghaction-github-pages@v4
         with:
-          # 思路：本仓库为源码，自动构建部署到另外的仓库
-          # repo：你要部署的仓库地址，格式为“GitHub用户名/仓库名”。需要在当前仓库设置，如下：
-          # Secrets and variables -> Actions  -> Secrets -> New repository secret, Name *: GH_RRPO, Secret *: GitHub用户名/仓库名
+          # 部署到指定仓库
           repo: ${{ secrets.GH_RRPO }}
           # 部署到 main 分支
-          target_branch: main          
+          target_branch: main
           # 部署目录为 VuePress 的默认输出目录
           build_dir: src/.vuepress/dist
         env:
-          # @see https://docs.github.com/cn/actions/reference/authentication-in-a-workflow#about-the-github_token-secret
-          # Personal access tokens(个人令牌) 需要提前申请好，在当前仓库设置，如下：
-          # Name *: GH_PAGES_TOKEN, Secret *: ghp_xxxxxxx
+          # 使用 GitHub Token 进行认证
           GITHUB_TOKEN: ${{ secrets.GH_PAGES_TOKEN }}
 
   sync:
     runs-on: ubuntu-latest
     needs: docs  # 依赖 docs 任务完成
-    
-    steps:
 
-    # 同步到 Gitee
-    - name: Sync to Gitee
-      uses: Yikun/hub-mirror-action@v1.4
-      with:
-        src: github/lss53/shiwange  # 替换为你的 GitHub 仓库路径
-        dst: gitee/lss53/shiwange    # 替换为你的 Gitee 仓库路径
-        dst_token: ${{ secrets.GITEE_TOKEN }}   
+    steps:
+      - name: Sync to Gitee
+        uses: Yikun/hub-mirror-action@v1.4
+        with:
+          src: github/lss53/shiwange  # 替换为你的 GitHub 仓库路径
+          dst: gitee/lss53/shiwange    # 替换为你的 Gitee 仓库路径
+          dst_token: ${{ secrets.GITEE_TOKEN }}  # Gitee 的访问令牌
+          force_update: true  # 强制更新
