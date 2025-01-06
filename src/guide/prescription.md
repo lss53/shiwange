@@ -2,7 +2,7 @@
 title: "门诊开处方药那事儿"
 date: 2024-04-10
 icon: fa-solid fa-file-prescription
-order: 2
+# order: 2
 category:
   - 攻略
 tag:

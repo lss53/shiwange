@@ -3,7 +3,7 @@ title: QAuxiliary 一个基于 QNotified 的开源 Xposed 模块
 shortTitle: QAuxiliary
 date: 2024-10-18
 icon: fa-brands fa-qq
-order: 1
+# order: 1
 category:
   - Android
 tag:
