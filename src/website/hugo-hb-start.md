@@ -343,7 +343,7 @@ apps:
 |simple-icons|bilibili|
 |tabler|'outline/brand-bilibili'|
 
-::: info
+::: warning
 `outline/brand-bilibili`要加英文单引号或双引号后，才能在 YAML 中起作用。
 :::
 
