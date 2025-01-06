@@ -57,11 +57,12 @@ hugo mod init github.com/user/repo
 
 ### 导入主题和搜索引擎
 
-目录：`config/_default`，文件名：module.toml 或 module.yaml 或 module.json。
+目录：`config/_default` 。
 
-::: code-tabs#shell
+::: tabs#shell
 
 @tab toml
+文件名：module.toml
 
 ```toml
 [[imports]]
@@ -74,6 +75,8 @@ hugo mod init github.com/user/repo
 
 @tab yaml
 
+文件名：module.yaml
+
 ```yaml
 imports:
 - path: github.com/hbstack/theme-start
@@ -83,6 +86,8 @@ imports:
 ```
 
 @tab json
+
+文件名：module.json
 
 ```json
 {
@@ -138,11 +143,13 @@ hugo server
 
 ### 搜索引擎配置
 
-目录：`config/_default`，文件名：hugo.toml 或 hugo.yaml 或 hugo.json。
+目录：`config/_default` 。
 
-::: code-tabs#shell
+::: tabs#shell
 
 @tab toml
+
+文件名：hugo.toml
 
 ```toml
 [module]
@@ -170,6 +177,8 @@ hugo server
 
 @tab yaml
 
+文件名：hugo.yaml
+
 ```yaml
 module:
   imports:
@@ -192,6 +201,8 @@ params:
 ```
 
 @tab json
+
+文件名：hugo.json
 
 ```json
 {
@@ -248,11 +259,13 @@ params:
 
 ## 管理应用程序
 
-- 目录：`config/_default`，文件名：menus.toml 或 menus.yaml 或 menus.json。
+- 目录：`config/_default` 。
 
-::: code-tabs#shell
+::: tabs#shell
 
 @tab toml
+
+文件名：menus.toml
 
 ```toml
 [[apps]]
@@ -274,6 +287,8 @@ params:
 
 @tab yaml
 
+文件名：menus.yaml
+
 ```yaml
 apps:
   - identifier: group-1
@@ -289,6 +304,8 @@ apps:
 ```
 
 @tab json
+
+文件名：menus.json
 
 ```json
 {
