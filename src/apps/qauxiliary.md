@@ -5,7 +5,7 @@ date: 2024-10-18
 icon: fa-brands fa-qq
 # order: 1
 category:
-  - Android
+  - Android软件
 tag:
   - QAuxiliary
 ---

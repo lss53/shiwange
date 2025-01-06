@@ -5,7 +5,7 @@ date: 2024-10-23
 icon: fa-brands fa-google-play
 # order: 2
 category:
-  - Android
+  - Android软件
 tag:
   - Google Play
 ---
