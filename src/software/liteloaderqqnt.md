@@ -14,7 +14,7 @@ tag:
   
 下载 [LiteLoaderQQNT_Install](https://github.com/Mzdyl/LiteLoaderQQNT_Install/releases) 的 `install_windows.exe` ，双击安装，让其自动完成，建议仔细阅读程序`终端`提示。
 
-::: info
+::: tip
 
 - LiteLoaderQQNT 数据目录是 `C:\Users\用户名\Documents\LiteloaderQQNT` 。
 
