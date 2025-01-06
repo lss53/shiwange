@@ -25,7 +25,7 @@ projects:
     desc: 全球最大的同性交友网站
     link: https://github.com/
 
-  - icon: fa-brands fa-cloudflare
+  - icon: fab fa-cloudflare
     name: Cloudflare
     desc: 帮助构建更好的互联网
     link: https://www.cloudflare.com/
@@ -35,20 +35,20 @@ projects:
     desc: 一个与框架无关的组合型平台
     link: https://www.netlify.com/
 
+  - icon: fab fa-markdown
+    name: Markdown
+    desc: 在 60 秒内学会 Markdown
+    link: https://commonmark.org/help/
+
   - icon: book
-    name: 高中生物笔记
-    desc: 适合于基础知识比较薄弱的同学
-    link: /bionote/
+    name: 人教教材
+    desc: 中小学教材电子版
+    link: https://jc.pep.com.cn/
 
-  - icon: friend
-    name: 个人网盘
-    desc: 最新人教版高中生物音频等
-    link: https://pan.211777.xyz/
-
-  - icon: /logo.svg
-    name: 个人导航
-    desc: 让生活简单一点点
-    link: https://dh.211777.xyz
+  - icon: fas fa-building-columns
+    name: 取景框看世界
+    desc: 复旦大学博士，你的B站大学辅导员
+    link: https://space.bilibili.com/40427625
 
 footer: '由 <a href="https://vuepress.vuejs.org/zh/" target="_blank">VuePress</a> 强力驱动'
 ---
