@@ -18,27 +18,16 @@ tag:
 
 ## 获取 NeoDB Api
 
-::: info 使用此项目
-https://github.com/Lyunvy/neodb-shelf-api
-:::
+项目<https://github.com/Lyunvy/neodb-shelf-api>，可以部署在 vercel 上，过程不赘述。
 
-可以部署在 vercel 上，过程不赘述。
 
 ## 引用
 
-::: info 把`js、css、html`喂给 AI ，过程不赘述
-https://www.imsun.org/archives/1688.html
-:::
+1. 把 <https://www.imsun.org/archives/1688.html> 中的 `js、css、html` 喂给 AI ，过程不赘述。
 
-可以使用 `@source` 别名来引用当前项目的源目录，也可以使用 `alias` 选项来创建别名。
+2. 使用 `@source` 或 `alias` 引用。
 
-::: info 详见
-[指南→组件→Markdown 到 Vue SFC](https://theme-hope.vuejs.press/zh/guide/component/sfc.html)
-["Theme Hope"`alias`选项引用实例](https://github.com/vuepress-theme-hope/vuepress-theme-hope/blob/main/docs/theme/src/.vuepress/config.ts)
-:::
-
-## 实例
-
-::: info 详见
-本博客导航栏[观影](../movies.md)
+::: info
+- `@source+alias`[指南→组件→Markdown 到 Vue SFC](https://theme-hope.vuejs.press/zh/guide/component/sfc.html)
+- `alias`[Theme Hope→config.ts](https://github.com/vuepress-theme-hope/vuepress-theme-hope/blob/main/docs/theme/src/.vuepress/config.ts)
 :::
