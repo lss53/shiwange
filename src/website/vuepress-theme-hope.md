@@ -169,7 +169,6 @@ footer: '主题使用 <a href="https://theme-hope.vuejs.press/zh/" target="_blan
 
 - 示例路径：`F:\tmp\docs\src\.vuepress\sidebar\zh.ts`
 
-
 ::: info
 - [指南→侧边栏](https://theme-hope.vuejs.press/zh/guide/layout/sidebar.html) 
 - ["Theme Hope文档"侧边栏配置](https://github.com/vuepress-theme-hope/vuepress-theme-hope/blob/main/docs/theme/src/.vuepress/sidebar/zh.ts)
@@ -192,6 +191,18 @@ Giscus 是一个基于 GitHub Discussion 的评论系统，启用简便。
 [指南→评论#Giscus](https://theme-hope.vuejs.press/zh/guide/feature/comment.html#giscus)
 
 :::
+
+## 界面
+
+指南→界面→[图标支持](https://theme-hope.vuejs.press/zh/guide/interface/icon.html)`#浏览图标列表`，Fontawesome: https://fontawesome.com/search?o=r&m=free
+
+## Markdown
+
+指南→Markdown→样式化→[提示容器](https://theme-hope.vuejs.press/zh/guide/markdown/stylize/hint.html)`#演示`。
+
+指南→Markdown→样式化→[上下角标](https://theme-hope.vuejs.press/zh/guide/markdown/stylize/sup-sub.html)`#语法`。
+
+指南→Markdown→语法→[数学公式](https://theme-hope.vuejs.press/zh/guide/markdown/grammar/math.html)`#支持列表→Katex`。
 
 ## 推送到 GitHub
 
