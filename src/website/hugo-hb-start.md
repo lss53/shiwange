@@ -59,7 +59,7 @@ hugo mod init github.com/user/repo
 
 目录：`config/_default` 。
 
-::: tabs#shell
+::: tabs
 
 @tab toml
 文件名：module.toml
@@ -145,7 +145,7 @@ hugo server
 
 目录：`config/_default` 。
 
-::: tabs#shell
+::: tabs
 
 @tab toml
 
@@ -261,7 +261,7 @@ params:
 
 - 目录：`config/_default` 。
 
-::: tabs#shell
+::: tabs
 
 @tab toml
 
