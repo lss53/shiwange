@@ -5,7 +5,7 @@ icon: globe
 # order: 2
 date: 2024-11-24
 category:
-  - Windows 软件
+  - Windows软件
 tag:
   - Proxifier
 ---

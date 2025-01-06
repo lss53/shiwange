@@ -5,7 +5,7 @@ date: 2025-01-04
 icon: fa-solid fa-cloud-arrow-down
 # order: 5
 category:
-  - Windows 软件
+  - Windows软件
 tag:
   - WechatVideo
 ---

@@ -5,7 +5,7 @@ date: 2024-10-18
 icon: fa-brands fa-qq
 # order: 4
 category:
-  - Windows 软件
+  - Windows软件
 tag:
   - LiteLoaderQQNT
 ---

@@ -5,7 +5,7 @@ date: 2021-05-01
 icon: fab fa-node-js
 # order: 3
 category:
-  - Windows 软件
+  - Windows软件
 tag:
   - NVS
 ---

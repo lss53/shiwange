@@ -5,7 +5,7 @@ date: 2025-01-04
 icon: fa-solid fa-download
 # order: 6
 category:
-  - Windows 软件
+  - Windows软件
 tag:
   - 百度网盘
 ---

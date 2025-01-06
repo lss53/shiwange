@@ -5,7 +5,7 @@ date: 2024-12-22
 icon: fa-solid fa-toolbox
 # order: 1
 category:
-  - Windows 软件
+  - Windows软件
 tag:
   - Chocolatey
 ---
