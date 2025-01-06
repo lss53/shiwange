@@ -14,7 +14,7 @@ tag:
 
 作者的网盘：<https://www.uy5.net/download/list> 。
 
-::: info 自制绿色版
+::: tip 自制绿色版
 
 1. 7z 右键打开 `ODE 多功能助手 Setup 1.1.0.exe`，以`打开压缩包`的方式。
 2. 依次展开`ODE 多功能助手 Setup 1.1.0.exe\$PLUGINSDIR\app-64.7z`，提取到指定文件夹中。
@@ -23,9 +23,8 @@ tag:
 
 :::
 
-::: info 就是加速
-<https://www.94speed.com>已死，备份!
-:::
+[就是加速](https://www.94speed.com)已死，备份!
+
 
 
 
