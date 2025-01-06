@@ -16,16 +16,17 @@ NVS是一个跨平台的Node.js的版本切换软件，并且NVS本身是用 [**
 
 ## Windows 安装
 
-Windows 的 MSI 安装包可以从 [NVS releases page on GitHub](https://github.com/jasongin/nvs/releases) 这里获得。
+::: tip
 
-::: info Windows 7 SP1 安装 NVS
-
-Windows 7 SP1 需要安装 `PowerShell 3.0`， 打开 [Windows Management Framework 3.0](https://www.microsoft.com/en-us/download/details.aspx?id=34595)里有`PowerShell 3.0`，下载并安装其中的`Windows6.1-KB2506143-x64.exe`，重启电脑后再安装nvs。
+Windows 7 SP1 需要安装 `PowerShell 3.0`， 打开 [Windows Management Framework 3.0](https://www.microsoft.com/en-us/download/details.aspx?id=34595)，下载并安装其中的`Windows6.1-KB2506143-x64.exe`（里面有`PowerShell 3.0`），重启电脑再安装nvs。
 
 :::
+  
+Windows 的 MSI 安装包可以从 [NVS releases page on GitHub](https://github.com/jasongin/nvs/releases) 获得。
 
-> 默认为当前用户安装：先勾选`I accept the terms in the License Agreement`，再左击`Install`按钮；可能要稍等一会儿才会出现`Finish`按钮。
-> 也可以为所有用户安装：先勾选`I accept the terms in the License Agreement`，再左击「Advanced」按钮，勾选`Install for all users of this machine`，再左击两次`Next`按钮，一次`Install`按钮；可能要稍等一会儿才会出现`Finish`按钮。
+默认为当前用户安装：先勾选`I accept the terms in the License Agreement`，再左击`Install`按钮；可能要稍等一会儿才会出现`Finish`按钮。
+
+也可以为所有用户安装：先勾选`I accept the terms in the License Agreement`，再左击「Advanced」按钮，勾选`Install for all users of this machine`，再左击两次`Next`按钮，一次`Install`按钮；可能要稍等一会儿才会出现`Finish`按钮。
 
 以管理员的身份打开 cmd 命令窗口，执行命令 `nvs` 会开始自动下载 node-v12.18.2-win-x64.7z 。
 
@@ -72,9 +73,9 @@ PATH += %LOCALAPPDATA%\nvs\node\12.18.2\x64
 User profile PATH += %LOCALAPPDATA%\nvs\default
 ```
 
-至此，Node.js就可以正常使用了。
+至此，Node.js 就可以正常使用了。
 
-::: info 也可以通过 [chocolatey](./chocolatey.md) 安装
+::: tip 也可以通过 [chocolatey](./chocolatey.md) 安装
   
 ```
 choco install nvs
