@@ -54,24 +54,28 @@ Please run 'choco -?' or 'choco <command> -?' for help menu.
 
 ![安装Choco](./assets/ins-choco.png)
 
-
-2. 安装 Node.js
+::: important
 
 这几个非常高效的操作命令必须推荐：
 
-- choco search xxx，查找 xxx 安装包
-- choco info xxx，查看 xxx 安装包信息
-- choco install xxx，安装 xxx 软件
-- choco upgrade xxx，升级 xxx 软件
-- choco uninstall xxx， 卸载 xxx 软件
+- `choco search xxx`，查找 xxx 安装包
+- `choco info xxx`，查看 xxx 安装包信息
+- `choco install xxx`，安装 xxx 软件
+- `choco upgrade xxx`，升级 xxx 软件
+- `choco uninstall xxx`， 卸载 xxx 软件
 
-如何知道 chocolatey 仓库中都有哪些安装包可用呢？
+:::
 
-可以通过上面提到的命令 `choco search xxx` ，也可以访问官方仓库进行筛选。
+::: tip
 
-> [https://community.chocolatey.org/packages](https://community.chocolatey.org/packages)
+Q: 如何知道 chocolatey 仓库中都有哪些安装包可用呢？
+A: 可以通过上面提到的命令 `choco search xxx` ，也可以访问[官方仓库](https://community.chocolatey.org/packages)进行筛选。
 
-安装 Node.js 最新的长期维护版（LTS） ：通过查找得知，安装命令是 `choco install nodejs-lts` 粘贴到Windows PowerShell 命令窗口中，按回车执行。
+:::
+  
+2. 安装 Node.js
+
+安装 Node.js 最新的长期维护版（LTS） ：通过查找得知，安装命令是 `choco install nodejs-lts` 粘贴到命令行或 Windows PowerShell 命令窗口中，按回车执行。
 
 3. 安装 Git
 
