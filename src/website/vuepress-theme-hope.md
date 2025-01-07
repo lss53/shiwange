@@ -204,6 +204,10 @@ Giscus 是一个基于 GitHub Discussion 的评论系统，启用简便。
 
 指南→Markdown→语法→[数学公式](https://theme-hope.vuejs.press/zh/guide/markdown/grammar/math.html)`#支持列表→Katex`。
 
+指南→Markdown→语法→[选项卡](https://theme-hope.vuejs.press/zh/guide/markdown/content/tabs.html)`#案例`。
+
+指南→Markdown→代码→[代码块分组](https://theme-hope.vuejs.press/zh/guide/markdown/code/code-tabs.html)`#演示`。
+
 ## 推送到 GitHub
 
 打开 [GitHub](https://github.com/) 新建一个存储库，在 `F:\tmp\docs` 目录中输入`cmd`按回车，依次输入下面的代码并按回车。
