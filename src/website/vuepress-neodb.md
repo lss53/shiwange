@@ -3,7 +3,7 @@ title: Vuepress + NeoDB 构建观影页面
 shortTitle: 构建观影页面
 date: 2025-01-02
 icon: fas fa-film
-order: 4
+order: 6
 category:
   - Blog
 tag:

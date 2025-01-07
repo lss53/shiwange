@@ -3,7 +3,7 @@ title: Chocolatey：一款 GitHub 上星标 10k+ 的 Windows 命令行软件管�
 shortTitle: Chocolatey
 date: 2024-12-22
 icon: fa-solid fa-toolbox
-# order: 1
+order: 6
 category:
   - Windows软件
 tag:

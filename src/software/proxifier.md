@@ -2,7 +2,7 @@
 title: Proxifier：一款可以为每个应用程序设置专属代理的神器，渗透必备！
 shortTitle: Proxifier
 icon: globe
-# order: 2
+order: 5
 date: 2024-11-24
 category:
   - Windows软件

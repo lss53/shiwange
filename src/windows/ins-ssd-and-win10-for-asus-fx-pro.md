@@ -2,7 +2,7 @@
 title: 为华硕 FX - Pro 安装固态硬盘和 Windows 10 系统
 date: 2021-08-12
 icon: fas fa-laptop
-order: 3
+order: 1
 category:
   - Windows
 tag:

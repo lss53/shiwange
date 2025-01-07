@@ -1,7 +1,7 @@
 ---
 title: Hugo + HB start 主题构建导航页
 shortTitle: 构建导航页
-date: 2024-12-23
+date: 2024-12-25
 icon: fa-solid fa-star
 order: 5
 category:

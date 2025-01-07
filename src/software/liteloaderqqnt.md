@@ -3,7 +3,7 @@ title: LiteLoaderQQNT：一款 QQNT 的插件加载器
 shortTitle: LiteLoaderQQNT
 date: 2024-10-18
 icon: fa-brands fa-qq
-# order: 4
+order: 2
 category:
   - Windows软件
 tag:

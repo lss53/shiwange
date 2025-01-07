@@ -3,7 +3,7 @@ title: 下载谷歌软件不求人 APKPure + Aurora+ Aptoide + ACMarket + F-Droi
 shortTitle: Google Play
 date: 2024-10-23
 icon: fa-brands fa-google-play
-# order: 2
+order: 2
 category:
   - Android软件
 tag:

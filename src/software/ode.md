@@ -1,9 +1,9 @@
 ---
 title: ODE：一款用爱发电的度娘网盘下载工具
 shortTitle: ODE
-date: 2025-01-04
+date: 2024-10-20
 icon: fa-solid fa-download
-# order: 6
+order: 3
 category:
   - Windows软件
 tag:
