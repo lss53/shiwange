@@ -2,7 +2,7 @@
 title: 静态徽章
 date: 2024-12-24
 icon: fas fa-shield
-order: 4
+order: 2
 category:
   - Blog
 tag:

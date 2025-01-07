@@ -3,7 +3,7 @@ title: WechatVideoSniffer + 小白点视频号工具 + res-downloader：三款�
 shortTitle: WechatVideoDown
 date: 2024-10-25
 icon: fa-solid fa-cloud-arrow-down
-# order: 4
+order: 4
 category:
   - Windows软件
 tag:
