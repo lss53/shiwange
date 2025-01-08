@@ -1,16 +1,25 @@
 import { sidebar } from "vuepress-theme-hope";
 
 export const zhSidebar = sidebar({
-  "/": [
-    // "" /* 主页 */, 
+  // "/": [
+  //   // "" /* 主页 */, 
+  //   {
+  //     text: "攻略",
+  //     icon: "fas fa-lightbulb",
+  //     prefix: "guide/",
+  //     children: "structure",      
+  //   }, 
+  // ], 
+
+  // 攻略
+  "/guide/": [
     {
-      text: "攻略",
-      icon: "fas fa-lightbulb",
-      prefix: "guide/",
-      children: "structure",      
+      text: "攻略", 
+      icon: "fas fa-lightbulb", 
+      children: "structure",    
     }, 
   ], 
-  
+
   // 高中生物笔记侧边栏
   "/bioone/": [
     // "" /* /bioone/ */, 
