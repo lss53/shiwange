@@ -15,10 +15,10 @@ export const zhNavbar = navbar([
         // 这样设置，直接显示 one/README.md、two/README.md……的标题和图标
         children: ["bioone/", "biotwo/", "bioxone/", "bioxtwo/", "bioxtre/"], 
       },
-      // 真题
+      // 试题
       {
-        text: "真题",
-        children: ["bio24/"], 
+        text: "试题",
+        children: ["biogk/", "biomk/"], 
       },      
     ],
   },
