@@ -31,11 +31,11 @@ export const zhNavbar = navbar([
        // 建站
       "website/",
       
-      // Android
-      "apps/",
-      
       // office
       "office/",
+      
+      // Android
+      "apps/",
       
       {
         text: "Windows",
