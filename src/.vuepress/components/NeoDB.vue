@@ -30,10 +30,13 @@
         :key="subject.item.id"
         class="neodb-item"
       >
-        <!-- 封面图片加载失败时显示调试信息 -->
-        <div v-if="subject.imageError" class="neodb-image-error">
-          <!-- 封面加载失败: {{ subject.item.cover_image_url }} -->
-          抱歉，封面加载失败！
+        <!-- 封面图片加载失败时显示提示 -->
+        <div
+          v-if="subject.imageError"
+          class="neodb-image-error"
+          :class="{ 'image-error-border': subject.imageError }"
+        >
+          <i class="fa-solid fa-face-sad-cry"></i>，需和谐上网！
         </div>
         <img
           v-else
@@ -243,6 +246,11 @@ onUnmounted(() => {
   font-size: 12px;
   text-align: center;
   border-radius: 4px;
+}
+
+/* 图片加载失败时的红色边框 */
+.image-error-border {
+  border: 2px solid red;
 }
 
 .neodb-title {
