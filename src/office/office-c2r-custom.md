@@ -5,10 +5,9 @@ date: 2025-01-06
 icon: fas fa-gear
 order: 1
 category:
-  - Microsoft
-  - Windows软件
-tag:
   - Office
+tag:
+  - 365
 ---
 
 - Retail Office（例如 Microsoft 365）具有最新的功能更新，而 Volume Office（例如 ProPlus 2024）则没有。
