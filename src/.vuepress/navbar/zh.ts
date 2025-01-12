@@ -35,7 +35,7 @@ export const zhNavbar = navbar([
       "apps/",
       
       // office
-      "365/",
+      "office/",
       
       {
         text: "Windows",
