@@ -5,9 +5,10 @@ date: 2024-12-22
 icon: fa-solid fa-toolbox
 order: 6
 category:
-  - Windows软件
+  - Software
 tag:
   - Chocolatey
+  - 系统软件
 ---
 
 ### 传统安装方式

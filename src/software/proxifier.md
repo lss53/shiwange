@@ -5,9 +5,10 @@ icon: globe
 order: 5
 date: 2024-11-24
 category:
-  - Windows软件
+  - Software
 tag:
   - Proxifier
+  - 网络软件
 ---
 
 [Proxifier](https://www.proxifier.com) 可以让不支持通过代理服务器工作的网络程序能通过 SOCKS 或 HTTPS 代理或代理链。强烈建议尽可能使用[最新版本](https://www.proxifier.com/download)。

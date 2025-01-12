@@ -5,9 +5,10 @@ date: 2024-10-25
 icon: fa-solid fa-cloud-arrow-down
 order: 4
 category:
-  - Windows软件
+  - Software
 tag:
-  - WechatVideo
+  - 微信视频号
+  - 下载软件
 ---
 
 

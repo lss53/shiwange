@@ -5,9 +5,10 @@ date: 2024-10-18
 icon: fa-brands fa-qq
 order: 2
 category:
-  - Windows软件
+  - Software
 tag:
   - LiteLoaderQQNT
+  - 社交软件
 ---
 
 官方下载[QQNT Windows 版](https://im.qq.com/index)，安装后退出 QQNT 。

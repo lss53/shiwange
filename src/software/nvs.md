@@ -5,9 +5,10 @@ date: 2021-05-01
 icon: fab fa-node-js
 order: 1
 category:
-  - Windows软件
+  - Software
 tag:
   - NVS
+  - 开发软件
 ---
 
 NVS是一个跨平台的Node.js的版本切换软件，并且NVS本身是用 [**Node.js**](http://nodejs.org) 编写的。

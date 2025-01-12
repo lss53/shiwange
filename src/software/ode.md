@@ -5,9 +5,10 @@ date: 2024-10-20
 icon: fa-solid fa-download
 order: 3
 category:
-  - Windows软件
+  - Software
 tag:
   - 百度网盘
+  - 下载软件
 ---
 
 [ODE](https://www.uy5.net/ode)易称“窝的”，是窝头将以多功能生态为主扩展开发的应用。
