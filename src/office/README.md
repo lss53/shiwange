@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365
+title: Office
 icon: fab fa-microsoft
 article: false
 index: false

@@ -1,5 +1,5 @@
 ---
-title: Windows 软件
+title: Software
 icon: fas fa-desktop
 article: false
 index: false

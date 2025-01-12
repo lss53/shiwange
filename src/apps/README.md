@@ -1,5 +1,5 @@
 ---
-title: Android 软件
+title: Android
 icon: fas fa-mobile-screen
 article: false
 index: false
