@@ -29,21 +29,22 @@ export const zhNavbar = navbar([
     icon: "fas fa-code",
     children: [
        // 建站
-      "website/", 
-      // microsoft
+      "website/",
+      
+      // Android
+      "apps/",
+      
+      // office
+      "365/",
+      
       {
-        text: "微软", 
+        text: "Windows",
         children: [
-          "windows/", 
-          "365/", 
-          // 这样设置可以覆盖 365/README.md 的标题和图标
-          // { text: "365", icon: "fab fa-microsoft", link: "365/"},
+          "windows/",
+          "software/",
+          // 这样设置可以覆盖 software/README.md 的标题和图标
+          // { text: "software", icon: "fab fa-microsoft", link: "software/"},
           ],
-      },
-      // 软件
-      {
-        text: "软件",
-        children: ["apps/", "software/"], 
       },
       
     ],
@@ -56,10 +57,10 @@ export const zhNavbar = navbar([
     children: [
       // 指南（攻略或教程）
       {
-        text: "攻略", 
-        icon:"fas fa-lightbulb", 
-        link: "guide/",  
-      }, 
+        text: "攻略",
+        icon:"fas fa-lightbulb",
+        link: "guide/",
+      },
       
     ], 
   }, 
