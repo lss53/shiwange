@@ -4,9 +4,9 @@ date: 2024-12-24
 icon: fas fa-shield
 order: 2
 category:
-  - Blog
+  - 建站
 tag:
-  - badge
+  - 徽章
 ---
 
 ## 前言

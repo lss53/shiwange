@@ -4,9 +4,10 @@ date: 2021-05-02
 icon: fas fa-images
 order: 1
 category:
-  - Blog
+  - 建站
 tag:
   - npm
+  - 图床
 ---
 
 眼下找一个稳定白嫖的图床实属不易，npm方案是个不错的选择，白嫖npm丰富的国内镜像节点。

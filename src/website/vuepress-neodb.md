@@ -5,7 +5,7 @@ date: 2025-01-02
 icon: fas fa-film
 order: 6
 category:
-  - Blog
+  - 图床
 tag:
   - Vuepress
   - NeoDB

@@ -1,13 +1,14 @@
 ---
-title: OneManager + Onedrive + Vercel 构建网盘
-shortTitle: 构建网盘
+title: OneManager + Onedrive + Vercel 构建在线网盘
+shortTitle: 构建在线网盘
 date: 2024-01-31
 icon: fas fa-cloud
 order: 3
 category:
-  - Blog
+  - 建站
 tag:
-  - Disk
+  - 在线网盘
+  - OneManager
 ---
 
 ##	前提条件

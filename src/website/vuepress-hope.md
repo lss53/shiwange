@@ -5,9 +5,10 @@ date: 2024-12-23
 icon: fa-solid fa-blog
 order: 5
 category:
-  - Blog
+  - 建站
 tag:
   - Vuepress
+  - Hope主题
 ---
 
 ```component VPBanner

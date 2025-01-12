@@ -1,16 +1,17 @@
 ---
-title: Hugo + HB start 主题构建导航页
+title: Hugo + HBstart 主题构建导航页
 shortTitle: 构建导航页
 date: 2024-12-25
 icon: fa-solid fa-star
 order: 4
 category:
-  - Blog
+  - 建站
 tag:
   - hugo
+  - 导航页
 ---
 
-## 安装 HB start 主题
+## 安装 HBstart 主题
 
 ::: info
 [HB start 主题](https://github.com/hbstack/theme-start)
