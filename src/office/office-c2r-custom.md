@@ -7,7 +7,7 @@ order: 1
 category:
   - Office
 tag:
-  - 365
+  - Microsoft365
 ---
 
 - Retail Office（例如 Microsoft 365）具有最新的功能更新，而 Volume Office（例如 ProPlus 2024）则没有。
