@@ -2,7 +2,7 @@
 title: ImageMagick：一款 GitHub 上星标 10k+ 的编辑和处理数字图像软件套件
 shortTitle: ImageMagick
 date: 2025-04-17
-icon: fa-solid fa-toolbox
+icon: fa-solid fa-image
 order: 7
 category:
   - Software
@@ -21,11 +21,11 @@ tag:
 
 ### 定制专属SVG图标
 
-1. 用`记事本/VSCode`等工具打开下载的 `.svg` 文件。
+1. 用`记事本/VSCode`等工具打开下载的 `xxx.svg` 文件。
 
-2. 推荐 [DeepSeek](https://www.deepseek.com)中修改下载的 `.svg` 文件。
+2. 把`步骤1`中的源代码喂给 [DeepSeek](https://www.deepseek.com)，再写上你的修改要求，提交等待生成。
 
-3. 保存文件：建议命名为 `icon.svg` 。
+3. 粘贴`步骤2`DeepSeek生成的源代码，另存为 `icon.svg` 。
 
 
 ### 生成多尺寸ICO文件
