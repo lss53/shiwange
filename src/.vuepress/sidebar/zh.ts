@@ -101,7 +101,7 @@ export const zhSidebar = sidebar({
   // Windows 系统
   "/windows/": [
     {
-      text: "Microsoft 365", 
+      text: "Windows 系统", 
       icon: "fab fa-windows", 
       children: "structure",    
     }, 
