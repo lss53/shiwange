@@ -120,6 +120,7 @@ rd /q /s mount-temp 2>nul
 pause
 exit /b 1
 ```
+:::
 
 ### 打印机问题
 
