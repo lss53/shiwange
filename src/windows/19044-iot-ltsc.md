@@ -37,15 +37,19 @@ slmgr /ipk QPM6N-7J2WJ-P88HH-P3YRH-YY74H
 1. 安装英文版 IoT LTSC
 2. 添加中文语言包
 
-## LTSC 2021 版已知问题及解决方案
+## LTSC 2021 版已知问题及修复
 
-### wsappx 进程高占用
+### 已知问题
 
-### 中文输入法候选框不显示
+1. wsappx 进程高占用
 
-#### 修复步骤：
+2. 中文输入法候选框不显示
 
-1. 下载并解压我提供的依赖组件包<https://mnet.lanzouw.com/iXWjzwl3nnc>
+3. 共享打印机问题（修复：打补丁`KB5007253`）
+
+### 问题1-2的修复步骤
+
+1. 下载并解压我提供的依赖组件包<https://wwqm.lanzouu.com/b00g390a4j#5tw0>密码:5tw0
 
 2. 集成方式
 
@@ -102,7 +106,7 @@ if errorlevel 1 goto FAIL
 :: 阶段3：集成组件
 echo [4/7] 集成Appx包...
 %DISM% /image:mount-temp /Add-ProvisionedAppxPackage ^
-    /PackagePath:"%APPX%" /SkipLicense /Region:"all"
+    /PackagePath:%APPX% /SkipLicense /Region:"all"
 
 :: 阶段4：完成处理
 echo [5/7] 提交更改...
@@ -121,7 +125,3 @@ pause
 exit /b 1
 ```
 :::
-
-### 打印机问题
-
-- 打补丁 `KB5007253`
