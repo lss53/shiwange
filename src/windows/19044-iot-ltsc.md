@@ -11,7 +11,6 @@ tag:
 
 ## Windows LTSC 与 IoT LTSC 版本对比
 
-### 功能与支持差异
 | 对比项        | LTSC 版本              | IoT LTSC 版本          |
 |---------------|------------------------|------------------------|
 | 功能组件      | 完全相同               | 完全相同               |
@@ -21,7 +20,9 @@ tag:
 
 ## IoT LTSC 中文支持方案
 
-### 推荐方案（转换法）
+::: tabs
+
+@tab 推荐方案（转换法）
 
 1. 安装普通中文版LTSC
 
@@ -32,24 +33,19 @@ slmgr /ipk QPM6N-7J2WJ-P88HH-P3YRH-YY74H
 ```
 > 还原密钥：M7XTQ-FN8P6-TTKYV-9D4CC-J462D
 
-### 备选方案（语言包法）
+@tab 备选方案（语言包法）
 
 1. 安装英文版 IoT LTSC
+
 2. 添加中文语言包
 
-## LTSC 2021 版已知问题及修复
+:::
 
-### 已知问题
+## 已知问题及修复
 
-1. wsappx 进程高占用
+### wsappx 进程高占用、中文输入法候选框不显示
 
-2. 中文输入法候选框不显示
-
-3. 共享打印机问题（修复：打补丁`KB5007253`）
-
-### 问题1-2的修复步骤
-
-1. 下载并解压我提供的依赖组件包<https://wwqm.lanzouu.com/b00g390a4j#5tw0>密码:5tw0
+1. 下载并解压我提供的依赖组件包(DISM可选)<https://wwqm.lanzouu.com/b00g390a4j#5tw0>密码:5tw0
 
 2. 集成方式
 
@@ -124,4 +120,14 @@ rd /q /s mount-temp 2>nul
 pause
 exit /b 1
 ```
+
 :::
+
+### 共享打印机问题
+
+1. 2021年11月17日推送的`KB5007253`补丁已修复共享打印机问题。
+
+2. Windows 更新：打开`设置` → 转至`更新和安全` → 点击`Windows 更新` → 选择`检查更新` → 单击`下载并安装` → 同意`立即重启`。
+
+3. Microsoft®Update Catalog <https://www.catalog.update.microsoft.com/Search.aspx?q=KB5007253>。
+
