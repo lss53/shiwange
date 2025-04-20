@@ -64,6 +64,10 @@ setup.exe /download Configuration.xml
 
 :::
 
-## 帮助
+## 安装实例
+
+Microsoft 365 应用企业版[Configuration.xml](https://wwqm.lanzouu.com/b00g390j5e#frwh)密码:frwh
+
+## 帮助文档
 
 官方教程：[Office 部署工具概述](https://learn.microsoft.com/zh-cn/microsoft-365-apps/deploy/overview-office-deployment-tool)
