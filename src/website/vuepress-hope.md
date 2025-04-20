@@ -222,6 +222,19 @@ git remote add origin https://github.com/user/repo.git
 git push -u origin main
 ```
 
+可能需要以下设置，按需配置。
+
+1. 设置 Git 全局用户信息
+
+```sh
+git config --global user.email "you@example.com"
+git config --global user.name "Your Name"
+```sh
+
+2. 使用 Token 认证
+
+`Browser/Device` → `Sign in with your browser` → 输入`Username`(GitHub 用户名)和`Password`(生成的 Token)
+
 ## 部署项目
 
 部署 VuePress 项目。
