@@ -63,9 +63,7 @@ Add-AppxPackage -Path "[依赖组件包的所在路径]\Microsoft.VCLibs.140.00_
 ::: warning
 - 路径需替换为实际文件位置
 - 只需安装对应系统位宽的版本
-:::
 
-:::
 
 @tab 离线集成（系统镜像封装）
 
