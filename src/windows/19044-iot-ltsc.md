@@ -129,5 +129,5 @@ exit /b 1
 
 2. Windows 更新：打开`设置` → 转至`更新和安全` → 点击`Windows 更新` → 选择`检查更新` → 单击`下载并安装` → 同意`立即重启`。
 
-3. Microsoft®Update Catalog <https://www.catalog.update.microsoft.com/Search.aspx?q=KB5007253>。
+3. [Microsoft®Update Catalog](https://www.catalog.update.microsoft.com/Search.aspx?q=KB5007253)。
 
