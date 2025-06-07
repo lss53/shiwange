@@ -61,7 +61,14 @@ export const zhNavbar = navbar([
         icon:"fas fa-lightbulb",
         link: "guide/",
       },
-      
+      // 食谱
+      {
+        text: "食谱",
+        icon:"fas fa-book-bookmark",
+        link: "cookbook/",
+      },
+
+
     ], 
   }, 
   

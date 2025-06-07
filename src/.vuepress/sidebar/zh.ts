@@ -11,6 +11,15 @@ export const zhSidebar = sidebar({
   //   }, 
   // ], 
 
+  // 食谱
+  "/cookbook/": [
+    {
+      text: "食谱", 
+      icon: "fas fa-book-bookmark", 
+      children: "structure",    
+    }, 
+  ], 
+  
   // 攻略
   "/guide/": [
     {
