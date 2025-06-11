@@ -1,7 +1,7 @@
 ---
 title: 微信公众号推文双封面图制作文档
 date: 2025-06-11
-icon: fas fa-weixin
+icon: fa-brands fa-weixin
 order: 5
 category:
   - 攻略
