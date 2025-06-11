@@ -84,11 +84,6 @@ actions:
 
 :::
 
-::: tip 在 Windows 上打开终端
-
-请使用文件管理器打开对应文件夹，然后在上方的地址栏中输入 `cmd` 并按下回车。
-
-:::
 
 #### 升级版本
 
@@ -97,13 +92,26 @@ actions:
 ::: tabs#shell
 
 @tab pnpm
+```bash
 pnpm dlx vp-update
+```
 
 @tab yarn
+```bash
 yarn dlx vp-update
+```
 
 @tab npm
+```bash
 npx vp-update
+```
+
+:::
+
+
+::: tip 在 Windows 上打开终端
+
+请使用文件管理器打开对应文件夹，然后在上方的地址栏中输入 `cmd` 并按下回车。
 
 :::
 
