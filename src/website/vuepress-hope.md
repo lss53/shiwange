@@ -58,6 +58,8 @@ actions:
 
 ### 项目命令
 
+#### 常用命令
+
 运行路径：`F:\tmp\docs` 。常用命令如下：
 
 ::: tabs#shell
@@ -85,6 +87,23 @@ actions:
 ::: tip 在 Windows 上打开终端
 
 请使用文件管理器打开对应文件夹，然后在上方的地址栏中输入 `cmd` 并按下回车。
+
+:::
+
+#### 升级版本
+
+要升级主题和 VuePress 版本，请执行以下命令:
+
+::: tabs#shell
+
+@tab pnpm
+pnpm dlx vp-update
+
+@tab yarn
+yarn dlx vp-update
+
+@tab npm
+npx vp-update
 
 :::
 
