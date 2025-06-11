@@ -141,7 +141,7 @@ export default hopeTheme({
 
   // enable it to preview all changes in time
   // 使其能够及时预览所有更改
-  // hotReload: true,
+  hotReload: true,
 
   // These features are enabled for demo, only preserve features you need here
   //这些功能仅供演示使用，此处只保留您需要的功能
