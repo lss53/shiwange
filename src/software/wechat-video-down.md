@@ -50,7 +50,7 @@ tag:
 
 :::
 
-::: note 
+::: info
 
 [wechatDownload](https://github.com/qiye45/wechatDownload) 微信公众号文章批量下载工具，支持评论、合集下载，支持保存html/mhtml/md/pdf/docx文件，保存文章内图片、视频、音频文件。
 :::
