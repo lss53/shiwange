@@ -73,11 +73,11 @@ tag:
 #### 插入模块
 
 - 右键点击左侧"VBAProject (演示文稿名称)" → 插入 → 模块
-- 将**下面的完整VBA代码**粘贴到空白模块中
+- 将下面的**完整VBA代码**粘贴到空白模块中
 
 ::: details 完整VBA代码
 
-```vbscript
+```basic
 Sub MergeCovers()
     ' 设置幻灯片尺寸 (1283×383 像素)
     Const PointsPerInch As Single = 72
@@ -98,7 +98,7 @@ Sub MergeCovers()
     With inputDialog
         .Title = "选择横幅图 (900×383)"
         .Filters.Clear
-        .Filters.Add "图片文件", ".jpg;.jpeg;*.png"
+        .Filters.Add "图片文件", "*.jpg;*.jpeg;*.png"
         If .Show <> -1 Then Exit Sub
         wideImagePath = .SelectedItems(1)
     End With
@@ -107,7 +107,7 @@ Sub MergeCovers()
     With inputDialog
         .Title = "选择方形图 (383×383)"
         .Filters.Clear
-        .Filters.Add "图片文件", ".jpg;.jpeg;*.png"
+        .Filters.Add "图片文件", "*.jpg;*.jpeg;*.png"
         If .Show <> -1 Then Exit Sub
         squareImagePath = .SelectedItems(1)
     End With
