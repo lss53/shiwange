@@ -53,8 +53,22 @@ tag:
 ::: info
 
 [wechatDownload](https://github.com/qiye45/wechatDownload) 微信公众号文章批量下载工具，支持评论、合集下载，支持保存html/mhtml/md/pdf/docx文件，保存文章内图片、视频、音频文件。
+
 :::
 
+## wx_channels_download
+
+[wx_channels_download](https://github.com/ltaoo/wx_channels_download)体积小、使用简单、支持 macOS 和 Windows 系统。
+
+::: tip 使用方法
+
+1. 下载[二进制文件](https://github.com/ltaoo/wx_channels_download/releases)，以管理员身份运行，首次打开会自动安装证书，然后启动服务。当终端提示`服务已正确启动`就说明可以使用了。
+
+2. 打开微信 PC 端，点击需要下载的视频，在视频下方的操作按钮一栏，会多出一个下载按钮。如果没有，可以看看`更多`这里是否有`下载视频`按钮。
+
+3. 等待视频开始播放，然后暂停视频，点击下载按扭即可下载视频。下载成功后，会在上方显示已下载的文件，下载文件名最后面会标志该视频质量。默认会下载下拉菜单中第一个质量视频。点开更多，可以下载其他质量的视频，包括原始视频。
+
+:::
 
 ## WechatVideoSniffer
 
@@ -63,6 +77,8 @@ tag:
 ::: tip 使用方法
 
 1. windows7 和一直没更新的比较老的 windows10 用户会提示你是否安装 `edge webview2 runtime`，请选择是，否则进去也是无法正常下载。
+
 2. 先不要打开微信，先打开软件，点菜单 -> 删除缓存(会有一个弹窗显示删除成功)，然后点菜单 -> 启动监听，接着启动微信打开某个视频播放页面就能看到界面上有拦截到的视频
 
 :::
+
