@@ -20,23 +20,24 @@ tag:
 ## 二、完成实名认证
 
 - 腾讯云大部分付费服务需实名认证后使用（部分免费功能可能无需）。 
-  个人用户：进入https://console.cloud.tencent.com/developer/auth，选择「个人实名认证」，按提示上传身份证信息并完成验证。  
+  个人用户：进入<https://console.cloud.tencent.com/developer/auth>，选择「个人实名认证」，按提示上传身份证信息并完成验证。  
 - 企业用户：选择「企业实名认证」，需提供企业营业执照、法人信息等材料（具体以页面指引为准）。  
 
 
 ## 三、开通文字识别（OCR）服务
+
 1. 登录后，进入腾讯云控制台：https://console.cloud.tencent.com  
 
 2. 在顶部导航栏选择「产品」> 搜索「文字识别」或通过路径：人工智能 > 图像与语音处理 > 文字识别，进入OCR服务页面。  
+    （若找不到入口，可直接搜索“文字识别”快速定位）  
 
-3. （若找不到入口，可直接搜索“文字识别”快速定位）  
-   进入OCR控制台后，系统会提示“立即开通”。点击「开通」，根据提示确认服务协议，完成开通。  
+3. 进入OCR控制台后，系统会提示“立即开通”。点击「开通」，根据提示确认服务协议，完成开通。  
 
 ## 四、获取API密钥（调用服务必需）
 
 - 要调用OCR接口，需先创建API密钥（SecretId和SecretKey），用于身份验证。  
   在OCR控制台右上角，点击「访问管理」或直接进入https://console.cloud.tencent.com/cam/capi。  
-- 强烈建议您`子账号密钥`！
+- 强烈建议您使用`子账号密钥`！
 
   - 用户列表 > 新建用户 > 快捷创建 > 输入`用户名` > 用户权限: 搜索ocr，勾选`QcloudOCRReadSelfUinUsage`并确定 > 创建用户
   - 点上面创建的`用户名` > API密钥 > 新建密钥
@@ -53,7 +54,9 @@ tag:
 
 ### 处单张图片
 
-- 进入https://cloud.tencent.com/document/sdk，搜索`文字识别`，分类选择`Python`，在`文字识别 (OCR)`里点击`API Explorer`。打开的新标签页`API Explorer - 云API -控制台里`找到`表格识别(V3)`并点击，再依次点击`代码示例`→`SDK`→`Python`，复制出现的示例代码。
+- 进入<https://cloud.tencent.com/document/sdk>，搜索`文字识别`，分类选择`Python`，在`文字识别 (OCR)`里点击`API Explorer`。打开的新标签页`API Explorer - 云API -控制台里`找到`表格识别(V3)`并点击，再依次点击`代码示例`→`SDK`→`Python`，复制出现的示例代码。
+
+::: details  示例代码
 
     ```python
     # -*- coding: utf-8 -*-
@@ -100,6 +103,8 @@ tag:
         print(err)
     ```
 
+:::
+
 - 在上面的示例代码中，params为空，我们需要在params中指定图片参数。我们假设使用base64方式，从本地读取一张图片并转换为base64字符串。步骤：
 
   - 读取图片文件，转换为base64。
@@ -108,6 +113,8 @@ tag:
 
   - 注意：base64字符串不需要带前缀（如data:image/jpeg;base64,），直接传递编码后的字符串即可。在下面的示例代码中替换 SECRET_ID 和 SECRET_KEY 为你的腾讯云API密钥。
   
+::: details  示例代码
+
     ```python
     # -*- coding: utf-8 -*-
     
@@ -165,11 +172,14 @@ tag:
     except TencentCloudSDKException as err:
         print(err)
     ```
-  
+
+:::
 
 ### 表格数据(json)转 Excel
 
 - 把表格数据 (json) 喂给 AI，指令：请把我给的数据转换为Excel格式，用Python。AI给出的示例代码：
+
+::: details  示例代码
 
     ```python
     # -*- coding: utf-8 -*-
@@ -247,8 +257,8 @@ tag:
     wb.save(output_file)
     print(f"Excel文件已生成: {output_file}")
     ```
-    
-    
+
+:::
 
 ### 批量识别图片转Excel
 
@@ -259,6 +269,8 @@ tag:
 - 默认工作表名为图片文件名（不含扩展名）
 
 1. 单线程版：
+
+::: details  示例代码
 
    ```python
    import json
@@ -466,7 +478,11 @@ tag:
        process_images(IMAGE_DIR, OUTPUT_EXCEL)
    ```
 
+:::
+    
 2. 多线程版
+
+::: details  示例代码
 
    ```python
    import json
@@ -695,5 +711,7 @@ tag:
    if __name__ == "__main__":
        process_images(IMAGE_DIR, OUTPUT_EXCEL)
    ```
+
+:::
 
 简约版到此为至，进阶版有时再折腾。
