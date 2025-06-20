@@ -2,7 +2,7 @@
 title: ProxyPin：一款 GitHub 上星标 9k+ 的开源免费抓包工具，支持Windows、Mac、Android、IOS、Linux 全平台系统
 shortTitle: ProxyPin
 icon: fas fa-link
-order: 8
+order: 4
 date: 2025-06-14
 category:
   - Software
