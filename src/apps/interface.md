@@ -1,6 +1,6 @@
 ---
 title: 影音接口：Tvbox + 洛雪音乐 + 海阔视界
-shortTitle: 影音接口
+shortTitle: Interface
 date: 2024-12-04
 icon: fa-solid fa-link
 order: 3
