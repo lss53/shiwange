@@ -9,6 +9,17 @@ tag:
   - 夸克网盘
 ---
 
+```component VPBanner
+title: 温馨提示
+content: 不会抓取手机端夸克网盘签到参数，请从<i>ProxyPin</i>开始。
+background: var(--bg-10)
+color: var(--banner-text)
+logo: logo.svg
+actions:
+  - text: ProxyPin
+    link: ../apps/proxypin.md
+```
+
 BNDou大佬的项目中夸克网盘自动签到的子功能：<https://github.com/BNDou/Auto_Check_In/blob/main/checkIn_Quark.py>
 
 修改过程：
@@ -32,14 +43,4 @@ def send(title, message):
     print(f"{title}: {message}")
 ```
 
-
-```component VPBanner
-title: 温馨提示
-content: 不会抓取手机端夸克网盘签到参数，请从<i>ProxyPin</i>开始。
-background: var(--bg-10)
-color: var(--banner-text)
-logo: logo.svg
-actions:
-  - text: ProxyPin
-    link: ../apps/proxypin.md
-```
+参考：<https://github.com/Liu8Can/Quark_Auot_Check_In>
