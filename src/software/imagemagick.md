@@ -32,9 +32,11 @@ tag:
 
 1. 下载并安装[Windows 二进制文件版本](https://imagemagick.org/script/download.php#windows)。
     
-2. 在终端中执行下面的命令（需先cd到文件目录）
+2. 在终端中执行下面的命令（文件目录cmd）
+
+**初始版**
     
-```cmd
+```bat
 rem 1. 生成各尺寸 PNG
 magick icon.svg -resize 256x256 256.png  
 magick icon.svg -resize 128x128 128.png  
@@ -47,5 +49,59 @@ rem 2. 合并为 ICO
 magick 256.png 128.png 64.png 48.png 32.png 16.png -compress none app.ico
 
 ```
+
+**进阶版**
+
+```bat
+@echo off
+setlocal enabledelayedexpansion
+
+:menu
+echo.
+echo Choose ICO generation method:
+echo 1. Direct ICO generation (Recommended)
+echo 2. Generate PNGs first then create ICO
+echo.
+set /p choice="Enter your choice (1 or 2): "
+
+if "%choice%"=="1" goto direct_ico
+if "%choice%"=="2" goto png_method
+
+echo Invalid input! Please choose again.
+goto menu
+
+:direct_ico
+echo Generating ICO directly with full sizes...
+magick -background none icon.svg ^
+       -compress none ^
+       -define icon:auto-resize="256,128,64,48,32,16" app.ico
+echo ICO file created: app.ico
+goto verify
+
+:png_method
+echo Generating multiple PNG sizes...
+magick -background none icon.svg ^
+       ( -clone 0 -compress none -resize 256x256 -write 256.png +delete ) ^
+       ( -clone 0 -compress none -resize 128x128 -write 128.png +delete ) ^
+       ( -clone 0 -compress none -resize 64x64 -write 64.png +delete ) ^
+       ( -clone 0 -compress none -resize 48x48 -write 48.png +delete ) ^
+       ( -clone 0 -compress none -resize 32x32 -write 32.png +delete ) ^
+       ( -clone 0 -compress none -resize 16x16 -write 16.png +delete ) ^
+       null:
+
+echo Combining PNGs into ICO...
+magick -compress none 256.png 128.png 64.png 48.png 32.png 16.png app.ico
+echo ICO file created: app.ico
+echo PNG files preserved: 256.png, 128.png, 64.png, 48.png, 32.png, 16.png
+
+:verify
+echo.
+echo Verifying ICO content...
+magick identify -format "%%f: %%wx%%h (%%m)\n" app.ico
+echo.
+echo Press any key to exit...
+pause >nul
+```
+
 
 3. 命令行处理参数 <https://imagemagick.org/script/command-line-processing.php> 。
