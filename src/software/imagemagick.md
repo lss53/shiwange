@@ -56,51 +56,172 @@ magick 256.png 128.png 64.png 48.png 32.png 16.png -compress none app.ico
 @echo off
 setlocal enabledelayedexpansion
 
+:: -------------------------------------------------------
+:: Setup environment and parameters
+:: -------------------------------------------------------
+
+REM 默认文件名
+set "svgfile=icon.svg"
+set "output_ico=app.ico"
+
+REM 初始化选项
+set "choice=0"
+
+:: -------------------------------------------------------
+:: Handle file drag and drop
+:: -------------------------------------------------------
+if not "%~1"=="" (
+    set "svgfile=%~1"
+    echo.
+    echo Using dragged file: !svgfile!
+    goto choose_method
+)
+
+:: -------------------------------------------------------
+:: Main Menu
+:: -------------------------------------------------------
 :menu
 echo.
-echo Choose ICO generation method:
-echo 1. Direct ICO generation (Recommended)
-echo 2. Generate PNGs first then create ICO
+echo ICO Generation Tool
+echo ====================
 echo.
-set /p choice="Enter your choice (1 or 2): "
+echo Step 1: Select input file (current: !svgfile!)
+echo Step 2: Choose generation method
+echo Step 3: Verify output
+echo.
+echo Options:
+echo 1. Select input SVG file
+echo 2. Generate ICO
+echo.
+set /p choice="Enter option (1 or 2): "
 
-if "%choice%"=="1" goto direct_ico
-if "%choice%"=="2" goto png_method
-
+if "%choice%"=="1" goto select_file
+if "%choice%"=="2" goto choose_method
 echo Invalid input! Please choose again.
 goto menu
 
+:: -------------------------------------------------------
+:: Select input SVG file
+:: -------------------------------------------------------
+:select_file
+echo.
+echo Please drag and drop an SVG file onto this window,
+echo or enter full path to the SVG file.
+echo Current input: !svgfile!
+set /p svgfile="Enter SVG file path: "
+call :validate_svg
+goto menu
+
+:: -------------------------------------------------------
+:: Choose generation method
+:: -------------------------------------------------------
+:choose_method
+echo.
+echo Generating ICO from: !svgfile!
+echo.
+echo Choose ICO generation method:
+echo 1. Direct ICO generation (Recommended, fastest)
+echo 2. Generate PNGs first then create ICO (Keep temp files)
+echo.
+set /p method="Enter method (1 or 2): "
+
+if "!method!"=="1" goto direct_ico
+if "!method!"=="2" goto png_method
+echo Invalid input! Please choose again.
+goto choose_method
+
+:: -------------------------------------------------------
+:: Direct ICO generation
+:: -------------------------------------------------------
 :direct_ico
-echo Generating ICO directly with full sizes...
-magick -background none icon.svg ^
+echo.
+echo Output file will be: %output_ico%
+echo.
+set /p output_ico="Enter output ICO name (or press Enter for %output_ico%): "
+if "!output_ico!"=="" set "output_ico=app.ico"
+
+echo Generating ICO directly...
+magick -background none "!svgfile!" ^
        -compress none ^
-       -define icon:auto-resize="256,128,64,48,32,16" app.ico
-echo ICO file created: app.ico
+       -density 384 ^
+       -define icon:auto-resize="256,128,64,48,32,16" "!output_ico!"
 goto verify
 
+:: -------------------------------------------------------
+:: PNG Method generation
+:: -------------------------------------------------------
 :png_method
+echo.
+set /p output_ico="Enter output ICO name (or press Enter for %output_ico%): "
+if "!output_ico!"=="" set "output_ico=app.ico"
+
 echo Generating multiple PNG sizes...
-magick -background none icon.svg ^
-       ( -clone 0 -compress none -resize 256x256 -write 256.png +delete ) ^
-       ( -clone 0 -compress none -resize 128x128 -write 128.png +delete ) ^
-       ( -clone 0 -compress none -resize 64x64 -write 64.png +delete ) ^
-       ( -clone 0 -compress none -resize 48x48 -write 48.png +delete ) ^
-       ( -clone 0 -compress none -resize 32x32 -write 32.png +delete ) ^
-       ( -clone 0 -compress none -resize 16x16 -write 16.png +delete ) ^
+md temp 2>nul
+magick -background none "!svgfile!" ^
+       -compress none ^
+       -density 384 ^
+       ( -clone 0 -resize 256x256 -write "temp\256.png" +delete ) ^
+       ( -clone 0 -resize 128x128 -write "temp\128.png" +delete ) ^
+       ( -clone 0 -resize 64x64 -write "temp\64.png" +delete ) ^
+       ( -clone 0 -resize 48x48 -write "temp\48.png" +delete ) ^
+       ( -clone 0 -resize 32x32 -write "temp\32.png" +delete ) ^
+       ( -clone 0 -resize 16x16 -write "temp\16.png" +delete ) ^
        null:
 
 echo Combining PNGs into ICO...
-magick -compress none 256.png 128.png 64.png 48.png 32.png 16.png app.ico
-echo ICO file created: app.ico
-echo PNG files preserved: 256.png, 128.png, 64.png, 48.png, 32.png, 16.png
+magick "temp\256.png" "temp\128.png" "temp\64.png" "temp\48.png" "temp\32.png" "temp\16.png" -compress none "!output_ico!"
 
+echo Cleaning up...
+set /p del_temp="Keep PNG files? (y/n, default=y): "
+if /i "!del_temp!"=="n" ( rd /s /q temp ) else ( move "temp\*.png" . >nul & rd temp )
+
+echo PNG files moved to current directory.
+goto verify
+
+:: -------------------------------------------------------
+:: Validate SVG file
+:: -------------------------------------------------------
+:validate_svg
+if not exist "!svgfile!" (
+    echo.
+    echo ERROR: File "!svgfile!" not found!
+    echo.
+    set "svgfile=icon.svg"
+    pause
+)
+exit /b
+
+:: -------------------------------------------------------
+:: Verify output
+:: -------------------------------------------------------
 :verify
 echo.
-echo Verifying ICO content...
-magick identify -format "%%f: %%wx%%h (%%m)\n" app.ico
+echo =================================
+echo ICO generation complete!
+echo Output file: !output_ico!
+echo =================================
 echo.
-echo Press any key to exit...
+echo Verifying ICO content...
+magick identify -format "%%f: %%wx%%h (%%m)\n" "!output_ico!"
+echo.
+
+set /p open="Open file location? (y/n, default=n): "
+if /i "!open!"=="y" ( explorer /select,"!output_ico!" )
+
+echo.
+echo Done! Press any key to exit...
 pause >nul
+exit /b
+
+:: -------------------------------------------------------
+:: Error Handling
+:: -------------------------------------------------------
+:error
+echo.
+echo ERROR: Failed to generate ICO
+echo Check ImageMagick installation and file permissions
+pause
+exit /b 1
 ```
 
 
