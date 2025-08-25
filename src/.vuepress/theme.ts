@@ -79,7 +79,7 @@ export default hopeTheme({
       displayFooter: true,
 
       blog: {
-        description: "今日事，今日毕",
+        description: "当全世界抛弃你时，你身上有上亿个细胞都为你而活",
         intro: "/intro.html",
       },
 

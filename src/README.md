@@ -17,7 +17,7 @@ heroText: 诗往哥
 # Special thank to @mo7
 bgImage: https://file.mo7.cc/api/public/bz
 heroFullScreen: true
-tagline: 当全世界抛弃你时，你身上有上亿个细胞都为你而活
+tagline: 今日事，今日毕
 
 projects:
   - icon: fab fa-github
