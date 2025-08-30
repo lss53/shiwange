@@ -5,10 +5,11 @@ date: 2025-01-02
 icon: fas fa-film
 order: 6
 category:
-  - 图床
+  - 建站
 tag:
   - Vuepress
   - NeoDB
+description: 学习如何在你的 VuePress 站点中通过 NeoDB 的 API 获取并展示你的电影、图书和音乐收藏列表，创建个性化的观影/阅读页面。
 ---
 
 ## 创建 NeoDB Token

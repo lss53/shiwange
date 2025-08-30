@@ -1,14 +1,15 @@
 ---
 title: Hugo + HBstart 主题构建导航页
-shortTitle: Hugo 导航页
+shortTitle: Hugo 导航页指南
 date: 2024-12-25
-icon: fa-solid fa-star
+icon: fa-solid fa-compass
 order: 4
 category:
   - 建站
 tag:
   - hugo
   - 导航页
+description: 本文详细介绍了如何从零开始使用 Hugo 静态网站生成器和 HBstart 主题搭建、配置并部署一个功能丰富的浏览器导航首页，包括搜索引擎定制与应用管理。
 ---
 
 ## 安装 HBstart 主题

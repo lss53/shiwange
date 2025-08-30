@@ -1,6 +1,6 @@
 ---
 title: Vuepress + Hope 主题构建博客
-shortTitle: Vuepress 博客
+shortTitle: Vuepress 博客指南
 date: 2024-12-23
 icon: fa-solid fa-blog
 order: 5
@@ -9,6 +9,7 @@ category:
 tag:
   - Vuepress
   - Hope主题
+description: 本指南全面讲解如何使用 VuePress 和功能强大的 Hope 主题快速搭建、配置、个性化并部署一个现代化的静态博客网站。
 ---
 
 ```component VPBanner
