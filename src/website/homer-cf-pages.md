@@ -2,7 +2,7 @@
 title: Homer + Cloudflare Pages 部署导航页
 shortTitle: Homer 导航页部署
 date: 2025-08-30
-icon: fa-solid fa-house
+icon: fa-regular fa-compass
 order: 5
 category:
   - 建站
