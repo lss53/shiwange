@@ -44,7 +44,7 @@ cp assets/config.yml.dist assets/config.yml
 
 ## 步骤二：基础配置
 
-编辑 `assets/config.yml` 文件来自定义您的导航页：
+编辑 `assets/config.yml` 文件来自定义您的导航页。
 
 ## 步骤三：配置多页面导航
 
@@ -59,7 +59,7 @@ cp assets/additional-page.yml.dist assets/additional-page.yml
 
 ### 2. 配置第二个页面
 
-编辑 `assets/additional-page.yml` 文件：
+编辑 `assets/additional-page.yml` 文件。
 
 ### 3. 在主页面添加切换链接
 
@@ -113,13 +113,13 @@ git push -u origin main
 
 ### 2. 通过 Cloudflare Pages 部署
 
-    1. 登录 [Cloudflare 控制台](https://dash.cloudflare.com/)
-    2. 选择 "Workers 和 Pages" → "创建应用程序" → "Pages" → "连接到 Git"
-    3. 选择您刚创建的 GitHub 仓库
-    4. 配置构建设置：
-       - 构建命令：留空
-       - 构建输出目录：留空
-    5. 点击 "保存并部署"
+- 登录 [Cloudflare 控制台](https://dash.cloudflare.com/)
+- 选择 "Workers 和 Pages" → "创建应用程序" → "Pages" → "连接到 Git"
+- 选择您刚创建的 GitHub 仓库
+- 配置构建设置：
+   - 构建命令：留空
+   - 构建输出目录：留空
+- 点击 "保存并部署"
 
 部署完成后，Cloudflare 会为您提供一个免费的页面地址（如 `https://your-project.pages.dev`）。
 
@@ -127,9 +127,9 @@ git push -u origin main
 
 如果您有自己的域名，可以将其指向 Cloudflare Pages：
 
-    1. 在 Cloudflare Pages 项目设置中，点击 "自定义域"
-    2. 添加您的域名并按照指示配置 DNS 记录
-    3. Cloudflare 会自动为您配置 SSL 证书
+- 在 Cloudflare Pages 项目设置中，点击 "自定义域"
+- 添加您的域名并按照指示配置 DNS 记录
+- Cloudflare 会自动为您配置 SSL 证书
 
 ## 步骤六：访问多页面导航
 
