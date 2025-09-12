@@ -1,3 +1,4 @@
+---
 title: 使用 Shields.io 制作静态徽章 (Badge) 的入门指南
 shortTitle: Shields.io 徽章制作
 date: 2024-12-24
