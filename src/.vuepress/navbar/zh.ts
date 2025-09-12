@@ -25,8 +25,13 @@ export const zhNavbar = navbar([
           },
           {
             text: "Windows 软件",
-            icon: "fab fa-windows",
+            icon: "fas fa-window-maximize",
             link: "/toolkit/software/", // 注意：根据您之前的设计，这里应该是 software
+          },
+          {
+            text: "Windows 系统",
+            icon: "fab fa-windows",
+            link: "/toolkit/windows/", // 注意：根据您之前的设计，这里应该是 software
           },
         ],
       },

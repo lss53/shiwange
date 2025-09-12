@@ -7,6 +7,7 @@ export const zhSidebar = sidebar({
   "/toolkit/apps/": "structure",
   "/toolkit/office/": "structure",
   "/toolkit/software/": "structure",
+  "/toolkit/windows/": "structure",
   
   // 为 /toolkit/ 根目录也定义一个侧边栏（可选，但推荐）
   "/toolkit/": [
