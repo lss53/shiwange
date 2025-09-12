@@ -20,7 +20,7 @@ export const zhSidebar = sidebar({
 
   // 为 /dev/ 根目录定义一个侧边栏
   "/dev/": [
-    { text: "技艺录", icon: "fas fa-compass-drafting", children: "structure" },
+    { text: "技艺录", icon: "fas fa-code-branch", children: "structure" },
   ],
 
   // ===== 生活志 /life/ =====
@@ -33,18 +33,4 @@ export const zhSidebar = sidebar({
     { text: "生活志", icon: "fas fa-lightbulb", children: "structure" },
   ],
 
-  // ===== 根目录 / =====
-  // 首页的默认侧边栏
-  "/": [
-    "", 
-    {
-      text: "格物志",
-      icon: "fas fa-compass-drafting",
-      children: [
-        "/toolkit/",
-        "/dev/",
-        "/life/",
-      ],
-    },
-  ],
 });
