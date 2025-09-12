@@ -1,6 +1,6 @@
 ---
-title: 开发手记
-icon: fas fa-signs-post
+title: 技艺录
+icon: fas fa-compass-drafting
 article: false
 index: false
 comment: false

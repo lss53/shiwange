@@ -51,12 +51,12 @@ export const zhNavbar = navbar([
           {
             text: "食谱",
             icon: "fas fa-utensils",
-            link: "/insights/cookbook/",
+            link: "/life/cookbook/",
           },
           {
             text: "攻略",
             icon: "fas fa-map-signs",
-            link: "/insights/guides/",
+            link: "/life/guides/",
           },
         ],
       },
