@@ -1,123 +1,50 @@
 import { sidebar } from "vuepress-theme-hope";
 
 export const zhSidebar = sidebar({
-  // "/": [
-  //   // "" /* 主页 */, 
-  //   {
-  //     text: "攻略",
-  //     icon: "fas fa-lightbulb",
-  //     prefix: "guide/",
-  //     children: "structure",      
-  //   }, 
-  // ], 
-
-  // 食谱
-  "/cookbook/": [
+  // ===== 工具箱 /toolkit/ =====
+  // 当用户访问 /toolkit/ 目录下的任何页面时，会显示这个侧边栏工具箱
+  "/toolkit/"[
     {
-      text: "食谱", 
-      icon: "fas fa-book-bookmark", 
-      children: "structure",    
+      text: "工具箱",
+      icon: "fas fa-tools",
+      children: "structure",
+    },
+  ],
+
+  // ===== 技艺录 /dev/ =====
+  // 当用户访问 /dev/ 目录下的任何页面时，会显示这个侧边栏
+  "/dev/": [
+    {
+      text: "技艺录",
+      icon: "fas fa-code-branch",
+      children: "structure",
     }, 
   ], 
+
+  // ===== 生活志 /life/ =====
+  // 当用户访问 /life/ 目录下的任何页面时，会显示这个侧边栏
+  "/life/": [
+    {
+      text: "生活志",
+      icon: "fas fa-compass",
+      children: "structure",
+    }, 
+  ],
   
-  // 攻略
-  "/guide/": [
+  // ===== 根目录 / =====
+  // 这是用户访问首页时的默认侧边栏，通常可以留空，
+  // 或者放一些最重要的入口链接。
+  "/": [
+    "", // 显示首页 README.md 的标题
     {
-      text: "攻略", 
-      icon: "fas fa-lightbulb", 
-      children: "structure",    
-    }, 
-  ], 
+      text: "格物志",
+      icon: "fas fa-pencil-ruler",
+      children: [
+        "/notes/",
+        "/dev/",
+        "/life/",
+      ],
+    },
+  ],
 
-  // 高中生物笔记侧边栏
-  "/bioone/": [
-    // "" /* /bioone/ */, 
-    {
-      text: "必修1分子与细胞", 
-      icon: "book", 
-      children: "structure",    
-    }, 
-  ], 
-
-  "/biotwo/": [
-    {
-      text: "必修2遗传与进化", 
-      icon: "book", 
-      children: "structure",    
-    }, 
-  ], 
-
-  "/bioxone/": [
-    {
-      text: "选必1稳态与调节", 
-      icon: "book", 
-      children: "structure",    
-    }, 
-  ], 
-
-  "/bioxtwo/": [
-    {
-      text: "选必2生物与环境", 
-      icon: "book", 
-      children: "structure",    
-    }, 
-  ], 
-
-  "/bioxtre/": [
-    {
-      text: "选必3生物技术与工程", 
-      icon: "book", 
-      children: "structure",    
-    }, 
-  ], 
-  
-  // 高中生物真题
-  "/bioexam24/": [
-    {
-      text: "2024年", 
-      icon: "book", 
-      children: "structure",    
-    }, 
-  ], 
-
-  // Windows 软件
-  "/software/": [
-    {
-      text: "Windows 软件", 
-      icon: "fas fa-desktop", 
-      children: "structure",    
-    }, 
-  ], 
-
-  // Android 软件
-  "/apps/": [
-    {
-      text: "Android 软件", 
-      icon: "fas fa-mobile-screen", 
-      children: "structure",    
-    }, 
-  ], 
-  
-  // Office 365
-  "/365/": [
-    {
-      text: "Microsoft 365", 
-      icon: "fab fa-microsoft", 
-      children: "structure",    
-    }, 
-  ], 
-
-  // Windows 系统
-  "/windows/": [
-    {
-      text: "Windows 系统", 
-      icon: "fab fa-windows", 
-      children: "structure",    
-    }, 
-  ], 
-
-  // 建站 
-  "/website/": "structure",
-  
-  
 });

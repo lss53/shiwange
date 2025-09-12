@@ -4,74 +4,38 @@ export const zhNavbar = navbar([
   // 主页
   "/",
   
-  // 高中生物
+  // “格物志” 下拉菜单，聚合了所有核心分类
   {
-    text: "高中生物", 
-    icon: "book", 
+    text: "格物志",
+    icon: "fas fa-pencil-ruler",
     children: [
-      // 笔记
       {
-        text: "笔记",
-        // 这样设置，直接显示 one/README.md、two/README.md……的标题和图标
-        children: ["bioone/", "biotwo/", "bioxone/", "bioxtwo/", "bioxtre/"], 
+        text: "技艺录",
+        icon: "fas fa-code-branch",
+        link: "/dev/", // 链接到 /dev/ 目录的 README.md
       },
-      // 试题
       {
-        text: "试题",
-        children: ["biogk/", "biomk/"], 
-      },      
+        text: "工具箱",
+        icon: "fas fa-tools",
+        link: "/toolkit/", // 链接到 /toolkit/ 目录的 README.md
+      },
+      {
+        text: "生活志",
+        icon: "fas fa-compass",
+        link: "/life/", // 链接到 /life/ 目录的 README.md
+      },
     ],
   },
   
-  // 折腾
+  // 独立的观影记录链接（如果需要）
+  "/movies",
+
+  // 独立的知识库链接（非常推荐！）
   {
-    text: "折腾",
-    icon: "fas fa-code",
-    children: [
-       // 建站
-      "website/",
-      
-      // office
-      "office/",
-      
-      // Android
-      "apps/",
-      
-      {
-        text: "Windows",
-        children: [
-          "windows/",
-          "software/",
-          // 这样设置可以覆盖 software/README.md 的标题和图标
-          // { text: "software", icon: "fab fa-microsoft", link: "software/"},
-          ],
-      },
-      
-    ],
+    text: "知识库",
+    icon: "fas fa-book-open",
+    // 这里填写您的 Docsify 知识库的完整 URL
+    link: "https://kb.211777.xyz", 
   },
-  
-  // 日常
-  {
-    text: "日常",
-    icon: "fas fa-list-check",
-    children: [
-      // 指南（攻略或教程）
-      {
-        text: "攻略",
-        icon:"fas fa-lightbulb",
-        link: "guide/",
-      },
-      // 食谱
-      {
-        text: "食谱",
-        icon:"fas fa-book-bookmark",
-        link: "cookbook/",
-      },
-
-
-    ], 
-  }, 
-  
-  "/movies", 
 
 ]);
