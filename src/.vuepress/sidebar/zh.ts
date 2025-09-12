@@ -3,7 +3,7 @@ import { sidebar } from "vuepress-theme-hope";
 export const zhSidebar = sidebar({
   // ===== 工具箱 /toolkit/ =====
   // 当用户访问 /toolkit/ 目录下的任何页面时，会显示这个侧边栏工具箱
-  "/toolkit/"[
+  "/toolkit/": [
     {
       text: "工具箱",
       icon: "fas fa-tools",
