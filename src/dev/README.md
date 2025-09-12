@@ -1,6 +1,6 @@
 ---
 title: 技艺录
-icon: fas fa-compass-drafting
+icon: fas fa-code-branch
 article: false
 index: false
 comment: false
