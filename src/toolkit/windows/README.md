@@ -1,6 +1,6 @@
 ---
-title: Windows 系统
-icon: fab fa-windows
+title: Windows  技巧
+icon: fas fa-cogs
 article: false
 index: false
 comment: false

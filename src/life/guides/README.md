@@ -1,6 +1,6 @@
 ---
 title: 攻略
-icon: fas fa-lightbulb
+icon: fa-solid fa-book-atlas
 article: false
 index: false
 comment: false

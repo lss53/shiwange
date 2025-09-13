@@ -1,6 +1,6 @@
 ---
-title: 移动端 App
-icon: fas fa-mobile-screen
+title: Android 应用
+icon: fab fa-android
 article: false
 index: false
 comment: false

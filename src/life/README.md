@@ -1,6 +1,7 @@
 ---
 title: 生活志
-icon: fas fa-lightbulb
+icon: fa-solid fa-leaf
+sidebar: false
 article: false
 index: false
 comment: false
