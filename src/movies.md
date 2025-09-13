@@ -10,6 +10,6 @@ Word: false
 
 <NeoDB />
 
-<script setup>
+<!--<script setup>
 import NeoDB from "@NeoDB";
-</script>
+</script>-->
