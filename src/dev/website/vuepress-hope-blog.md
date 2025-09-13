@@ -122,7 +122,7 @@ Theme Hope 内置了多种评论插件，如 Giscus。您只需在主题配置�
 
 ::: warning
 
-1. 进入 [DocSearch](https://docsearch.algolia.com/apply/) 后，根据提示操作即可！
+1. 进入 [DocSearch](https://docsearch.algolia.com/apply/) 后，根据提示操作即可！**出错可尝试重试**！
 
 2. 申请时填写的爬虫名称就是后面配置中需要的 `indexName`。
 
