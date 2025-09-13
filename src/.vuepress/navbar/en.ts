@@ -8,15 +8,15 @@ export const enNavbar = navbar([
     prefix: "/en/",
     children: [
       {
-        text: "Windows",
+        text: "Windows Apps",
         // prefix: "windows/",
-        children: ["software/"],
+        children: ["/toolkit/software/"],
       },
 
     ],
   },
   {
-    text: "V2 Docs",
+    text: "Hope Docs",
     icon: "book",
     link: "https://theme-hope.vuejs.press/",
   },
