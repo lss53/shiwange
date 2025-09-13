@@ -8,7 +8,9 @@ comment: false
 Word: false
 ---
 
-<NeoDB />
+<ClientOnly>
+  <NeoDB />
+</ClientOnly>
 
 <!--<script setup>
 import NeoDB from "@NeoDB";
