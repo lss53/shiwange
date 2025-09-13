@@ -76,7 +76,7 @@ export default hopeTheme({
       footer: 
         '主题 by <a href="https://theme-hope.vuejs.press/zh/" target="_blank">Hope</a>', 
 
-      displayFooter: true,
+      copyright: "基于 MIT 协议，© 2019-至今 shiwange",
 
       blog: {
         description: "当全世界抛弃你时，你身上有上亿个细胞都为你而活",
@@ -103,7 +103,7 @@ export default hopeTheme({
       footer: 
         'Theme by <a href="https://theme-hope.vuejs.press">vuepress-theme-hope</a>',
 
-      displayFooter: true,
+      copyright: "MIT Licensed, © 2019-present shiwange",
 
       blog: {
         description: "Better do it today than tomorrow",
@@ -116,6 +116,8 @@ export default hopeTheme({
     },
 
   },
+
+  displayFooter: true,
 
   // 加密
   encrypt: {

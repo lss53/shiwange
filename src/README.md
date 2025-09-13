@@ -50,5 +50,5 @@ projects:
     desc: 复旦大学博士，你的B站大学辅导员
     link: https://space.bilibili.com/40427625
 
-footer: '由 <a href="https://vuepress.vuejs.org/zh/" target="_blank">VuePress</a> 驱动 | 采用 MIT 许可协议, Copyright © 2021-present Shiwange'
+footer: '由 <a href="https://vuepress.vuejs.org/zh/" target="_blank">VuePress</a> 驱动'
 ---
