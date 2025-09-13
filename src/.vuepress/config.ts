@@ -25,9 +25,9 @@ export default defineUserConfig({
 
   // Enable it with pwa
   // shouldPrefetch: false,
-/*  alias: {
+  alias: {
     "@NeoDB": path.resolve(
       __dirname, 
       "./components/NeoDB.vue"), // 使用 alias 选项来创建别名
-  }, */
+  }, 
 });
