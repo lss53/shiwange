@@ -126,7 +126,9 @@ Theme Hope 内置了多种评论插件，如 Giscus。您只需在主题配置�
 
 2. 申请时填写的爬虫名称就是后面配置中需要的 `indexName`。
 
-3. `plugins.docsearch` 配置
+3. 安装 `@vuepress/plugin-docsearch` 后要运行命令 `pnpm install` ，防止部署出错！
+
+4. `plugins.docsearch` 配置
 
    ```ts
    import { hopeTheme } from "vuepress-theme-hope";
