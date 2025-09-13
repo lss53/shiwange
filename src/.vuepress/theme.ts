@@ -74,7 +74,7 @@ export default hopeTheme({
       sidebar: zhSidebar,
 
       footer: 
-        '主题使用 <a href="https://theme-hope.vuejs.press/zh/" target="_blank">VuePress Theme Hope</a>', 
+        '主题 by <a href="https://theme-hope.vuejs.press/zh/" target="_blank">Hope</a>', 
 
       displayFooter: true,
 
