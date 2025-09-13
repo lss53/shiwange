@@ -110,7 +110,42 @@ Theme Hope 内置了多种评论插件，如 Giscus。您只需在主题配置�
 
 - **参考**：[Theme Hope Markdown 指南](https://theme-hope.vuejs.press/zh/guide/markdown/)
 
-## 五、部署
+## 五、搜索
+
+::: info
+
+- **参考**：[搜索](https://theme-hope.vuejs.press/zh/guide/feature/search.html)`#使用 @vuepress/plugin-docsearch`
+
+- 关于搜索插件的可用选项，详见 [插件文档](https://ecosystem.vuejs.press/zh/plugins/search/slimsearch.html)。
+
+:::
+
+::: warning
+
+1. 进入 [DocSearch](https://docsearch.algolia.com/apply/) 后，根据提示操作即可！
+
+2. 申请时填写的爬虫名称就是后面配置中需要的 `indexName`。
+
+3. `plugins.docsearch` 配置
+
+   ```ts
+   import { hopeTheme } from "vuepress-theme-hope";
+
+   export default hopeTheme({
+     plugins: {
+       docsearch: {
+        // appId, apiKey 和 indexName 是必填的
+        appId: "YOUR_APP_ID",
+        apiKey: "YOUR_API_KEY",
+        indexName: "YOUR_INDEX_NAME",
+       },
+     },
+   });
+   ```
+:::
+
+
+## 六、部署
 
 ### 1. 推送到 GitHub
 将您的本地项目初始化为 Git 仓库，并将其推送到一个新的 GitHub 仓库中。
@@ -133,3 +168,5 @@ git push -u origin main
 平台会自动在您每次推送到 `main` 分支时重新构建和部署您的博客。
 
 - **参考**：[Theme Hope 部署指南](https://theme-hope.vuejs.press/zh/get-started/deploy.html)
+
+

@@ -252,6 +252,13 @@ export default hopeTheme({
       components: ["Badge", "VPCard", "VPBanner"],
     },
 
+    // 指南→功能→搜索
+    docsearch: {
+      appId: "6SEEIG2021",
+      apiKey: "0a3c939777df06ba1614c5d3f43d91a5",
+      indexName: "swblog",
+    },
+
     // install @vuepress/plugin-pwa and uncomment these if you want a PWA
     // pwa: {
     //   favicon: "/favicon.ico",
