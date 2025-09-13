@@ -6,7 +6,7 @@ export const enSidebar = sidebar({
     {
       text: "Software",
       icon: "fab fa-windows",
-      prefix: "/toolkit/software/",
+      prefix: "toolkit/software/",
       children: "structure",
     },
     "intro",

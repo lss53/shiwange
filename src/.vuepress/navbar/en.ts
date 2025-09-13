@@ -10,7 +10,7 @@ export const enNavbar = navbar([
       {
         text: "Windows Apps",
         // prefix: "windows/",
-        children: ["/toolkit/software/"],
+        children: ["toolkit/software/"],
       },
 
     ],
