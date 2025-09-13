@@ -27,7 +27,7 @@ color: var(--banner-text)
 logo: logo.svg
 actions:
   - text: 了解 Chocolatey
-    link: .../toolkit/software/chocolatey.md
+    link: /toolkit/software/chocolatey.md
 ```
 
 ## 一、安装与初始化

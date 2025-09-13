@@ -23,7 +23,7 @@ color: var(--banner-text)
 logo: logo.svg
 actions:
   - text: 了解 ProxyPin
-    link: .../toolkit/apps/proxypin-guide.md
+    link: /toolkit/apps/proxypin-guide.md
 ```
 
 ## 方案概述
