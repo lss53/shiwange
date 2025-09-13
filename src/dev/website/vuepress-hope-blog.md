@@ -3,7 +3,7 @@ title: 使用 VuePress 和 Hope 主题从零搭建现代化博客
 shortTitle: VuePress 博客指南
 date: 2024-12-23
 icon: fa-solid fa-blog
-order: 5
+order: 3
 category:
   - 网站搭建
 tag:

@@ -3,7 +3,7 @@ title: 使用 Homer 和 Cloudflare Pages 免费部署个人导航页
 shortTitle: Homer 导航页部署
 date: 2025-08-30
 icon: fa-solid fa-rocket
-order: 5
+order: 7
 category:
   - 网站搭建
 tag:

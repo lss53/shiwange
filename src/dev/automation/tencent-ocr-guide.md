@@ -3,7 +3,7 @@ title: 腾讯云 OCR API 批量识别表格实战指南
 shortTitle: 腾讯云 OCR 批量识别
 date: 2025-06-20
 icon: fa-solid fa-cloud
-order: 6
+order: 2
 category:
   - 自动化脚本
 tag:

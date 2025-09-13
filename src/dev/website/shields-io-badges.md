@@ -3,7 +3,7 @@ title: 使用 Shields.io 创建自定义静态徽章
 shortTitle: 创建静态徽章
 date: 2024-12-24
 icon: fas fa-shield-alt
-order: 2
+order: 5
 category:
   - 网站搭建
 tag:

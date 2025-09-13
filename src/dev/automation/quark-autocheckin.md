@@ -3,7 +3,7 @@ title: 夸克网盘自动签到脚本配置指南
 shortTitle: 夸克网盘自动签到
 date: 2025-06-20
 icon: fa-solid fa-robot
-order: 7
+order: 3
 category:
   - 自动化脚本
 tag:

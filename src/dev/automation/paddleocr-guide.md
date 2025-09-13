@@ -3,7 +3,7 @@ title: PaddleOCR 本地运行实战：文字与表格识别避坑指南
 shortTitle: PaddleOCR 本地实战
 date: 2025-07-13
 icon: fa-solid fa-robot
-order: 8
+order: 4
 category:
   - 自动化脚本
 tag:

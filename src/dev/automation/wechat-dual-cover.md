@@ -3,7 +3,7 @@ title: 微信公众号双封面图自动化制作指南
 shortTitle: 微信双封面制作
 date: 2025-06-11
 icon: fa-brands fa-weixin
-order: 5
+order: 1
 category:
   - 自动化脚本
 tag:
