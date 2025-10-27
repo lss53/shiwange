@@ -2,7 +2,7 @@
 title: Rust Windows 安装与配置完整指南（使用 MinGW64）
 shortTitle: Rust Windows 安装指南
 date: 2025-10-27
-icon: rust
+icon: fa-brands fa-rust
 order: 8
 category:
 - Windows 软件
