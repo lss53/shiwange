@@ -1,6 +1,6 @@
 ---
-title: 食谱
-icon: fas fa-utensils
+title: 烹饪
+icon: fa-solid fa-kitchen-set
 article: false
 index: false
 comment: false

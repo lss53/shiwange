@@ -5,7 +5,7 @@ date: 2026-03-29
 icon: fa-regular fa-compass
 order: 6
 category:
-  - 食谱
+  - 攻略
 tag:
   - 健康饮食
   - 膳食指南

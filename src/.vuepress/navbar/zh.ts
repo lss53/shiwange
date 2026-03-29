@@ -54,14 +54,14 @@ export const zhNavbar = navbar([
         text: "生活志",
         children: [
           {
-            text: "食谱",
-            icon: "fas fa-utensils",
-            link: "/life/cookbook/",
-          },
-          {
             text: "攻略",
             icon: "fa-solid fa-book-atlas",
             link: "/life/guides/",
+          },
+          {
+            text: "烹饪",
+            icon: "fas fa-utensils",
+            link: "/life/cooking/",
           },
           {
             text: "种植",

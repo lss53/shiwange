@@ -5,7 +5,7 @@ date: 2025-06-07
 icon: fas fa-pepper-hot
 order: 1
 category:
-  - 食谱
+  - 烹饪
 tag:
   - 热菜
   - 川菜

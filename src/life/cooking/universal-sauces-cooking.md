@@ -2,10 +2,10 @@
 title: "万能调味汁与烹饪指南"
 shortTitle: "调味指南"
 date: 2025-09-18
-icon: fas fa-utensils
+icon: fa-solid fa-kitchen-set
 order: 5
 category:
-  - 食谱
+  - 烹饪
 tag:
   - 调味汁
   - 烹饪技巧

@@ -5,7 +5,7 @@ date: 2025-06-07
 icon: fas fa-wine-glass
 order: 3
 category:
-  - 食谱
+  - 烹饪
 tag:
   - 饮品
   - 发酵食品

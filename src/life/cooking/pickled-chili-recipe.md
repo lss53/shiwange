@@ -5,7 +5,7 @@ date: 2025-06-13
 icon: fas fa-fish
 order: 4
 category:
-  - 食谱
+  - 烹饪
 tag:
   - 热菜
   - 川菜
