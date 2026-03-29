@@ -2,7 +2,7 @@
 title: "万能调味汁与烹饪指南"
 shortTitle: "调味指南"
 date: 2025-09-18
-icon: fa-solid fa-kitchen-set
+icon: fa-solid fa-compass
 order: 5
 category:
   - 烹饪

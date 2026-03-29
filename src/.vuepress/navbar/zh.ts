@@ -60,7 +60,7 @@ export const zhNavbar = navbar([
           },
           {
             text: "烹饪",
-            icon: "fas fa-utensils",
+            icon: "fa-solid fa-kitchen-set",
             link: "/life/cooking/",
           },
           {
