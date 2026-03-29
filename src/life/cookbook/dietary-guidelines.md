@@ -1,8 +1,8 @@
 ---
-title: 餐盘膳食指南
-shortTitle: 餐盘指南
+title: 膳食指南
+shortTitle: 
 date: 2026-03-29
-icon: fa-solid fa-utensils
+icon: fa-regular fa-compass
 order: 6
 category:
   - 食谱
