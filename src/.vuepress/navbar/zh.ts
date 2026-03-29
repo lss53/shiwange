@@ -63,6 +63,11 @@ export const zhNavbar = navbar([
             icon: "fa-solid fa-book-atlas",
             link: "/life/guides/",
           },
+          {
+            text: "种植",
+            icon: "fa-solid fa-trowel",
+            link: "/life/gardening/",
+          },
         ],
       },
     ],

@@ -24,6 +24,7 @@ export const zhSidebar = sidebar({
   // 为 life 下的每个子目录定义规则
   "/life/cookbook/": "structure",
   "/life/guides/": "structure",
+  "/life/gardening/": "structure",
 
 
 });
