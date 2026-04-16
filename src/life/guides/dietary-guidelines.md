@@ -2,7 +2,7 @@
 title: 膳食指南
 shortTitle: 
 date: 2026-03-29
-icon: fa-regular fa-compass
+icon: fa-solid fa-bowl-food
 order: 6
 category:
   - 攻略
