@@ -123,3 +123,139 @@ del /f /q tmp.vbs
 1. **备份旧版**：将 `D:\zen\core` 重命名为 `D:\zen\core1`。
 2. **重新制作**：重复上述的**步骤三**和**步骤四**（即：解压新版 Zen 安装包的 `core`、放入 libportable 文件、运行 `injectpe.bat` 注入、配置 `portable.ini` 缓存路径）。
 3. 双击 `D:\zen\core\zen.exe` 启动浏览器，在地址栏输入 `about:support`，检查**配置文件夹**栏。确认一切正常后，即可删除 `core1` 备份目录。
+4. 自动化 BAT 脚本。在 `core` **同级目录**下新建文本文件（如 `更新升级.txt`），粘贴以下内容后保存，并将扩展名改为 `.bat`（如 `更新升级.bat`），运行即可.
+``````batch
+@echo off
+setlocal
+
+set "BASE_DIR=%~dp0"
+set "CORE_DIR=%BASE_DIR%core"
+set "CORE_BAK=%BASE_DIR%core1"
+set "TOOLS_DIR=%BASE_DIR%tools"
+set "INSTALLER=%TOOLS_DIR%\zen.installer.exe"
+set "PORTABLE_7Z=%TOOLS_DIR%\portable_bin.7z"
+
+@echo ============================================================
+@echo  Zen 便携版一键更新脚本（智能版）
+@echo  功能：自动备份旧版、解压新版、排除32位文件、保留配置
+@echo  特性：全自动静默、错误回滚、适应未来文件变化
+@echo ============================================================
+@echo.
+
+:: ------------------------------------------------------------
+:: 1. 检测 7-Zip
+:: ------------------------------------------------------------
+set "SEVEN_ZIP="
+where 7z.exe >nul 2>nul && set "SEVEN_ZIP=7z.exe"
+if not defined SEVEN_ZIP (
+    if exist "C:\Program Files\7-Zip\7z.exe" set "SEVEN_ZIP=C:\Program Files\7-Zip\7z.exe"
+    if exist "C:\Program Files (x86)\7-Zip\7z.exe" set "SEVEN_ZIP=C:\Program Files (x86)\7-Zip\7z.exe"
+)
+if not defined SEVEN_ZIP (
+    echo [错误] 未找到 7-Zip，请安装后重试。
+    pause
+    exit /b 1
+)
+
+:: ------------------------------------------------------------
+:: 2. 检查必要文件
+:: ------------------------------------------------------------
+if not exist "%INSTALLER%" (
+    echo [错误] 缺少 %INSTALLER%
+    pause
+    exit /b 1
+)
+if not exist "%PORTABLE_7Z%" (
+    echo [错误] 缺少 %PORTABLE_7Z%
+    pause
+    exit /b 1
+)
+if not exist "%CORE_DIR%" (
+    echo [错误] 未发现 core 目录，请确认脚本放在 Zen 根目录。
+    pause
+    exit /b 1
+)
+
+:: ------------------------------------------------------------
+:: 3. 关闭 Zen 浏览器
+:: ------------------------------------------------------------
+tasklist /FI "IMAGENAME eq zen.exe" 2>NUL | find /I "zen.exe" >NUL
+if %errorlevel% equ 0 (
+    echo [错误] Zen 浏览器正在运行，请关闭后重试。
+    pause
+    exit /b 1
+)
+
+:: ------------------------------------------------------------
+:: 4. 备份旧版 core 为 core1
+:: ------------------------------------------------------------
+echo [1/4] 正在备份旧版...
+if exist "%CORE_BAK%" rmdir /s /q "%CORE_BAK%"
+rename "%CORE_DIR%" "core1"
+if not exist "%CORE_BAK%" (
+    echo [错误] 备份失败，请检查是否有程序占用 core 目录。
+    pause
+    exit /b 1
+)
+
+:: ------------------------------------------------------------
+:: 5. 解压新版 Zen 的 core 目录
+:: ------------------------------------------------------------
+echo [2/4] 正在解压新版 Zen...
+"%SEVEN_ZIP%" x "%INSTALLER%" core -o"%BASE_DIR%" -y >nul 2>&1
+if not exist "%CORE_DIR%" (
+    echo [错误] 解压新版 Zen 失败，正在恢复旧版...
+    rename "%CORE_BAK%" "core"
+    pause
+    exit /b 1
+)
+
+:: ------------------------------------------------------------
+:: 6. 解压 libportable 工具包（自动排除 32 位文件）
+:: ------------------------------------------------------------
+echo [3/4] 正在解压便携工具包...
+"%SEVEN_ZIP%" e "%PORTABLE_7Z%" -o"%CORE_DIR%" -x!portable32.dll -x!upcheck32.exe -y >nul 2>&1
+if %errorlevel% neq 0 (
+    echo [错误] 解压便携工具包失败，正在恢复旧版...
+    rmdir /s /q "%CORE_DIR%"
+    rename "%CORE_BAK%" "core"
+    pause
+    exit /b 1
+)
+
+:: ------------------------------------------------------------
+:: 8. 静默注入 portable64.dll
+:: ------------------------------------------------------------
+if not exist "%CORE_DIR%\injectpe.bat" (
+    echo [错误] injectpe.bat 不存在，注入失败，正在恢复旧版...
+    rmdir /s /q "%CORE_DIR%"
+    rename "%CORE_BAK%" "core"
+    pause
+    exit /b 1
+)
+echo [4/4] 正在注入 DLL...
+:: 进入 core 目录
+pushd "%CORE_DIR%"
+:: <nul 自动跳过所有 pause，2>nul 屏蔽脚本自毁引发的报错
+cmd /c injectpe.bat <nul 2>nul
+:: 用 popd 退回原目录，因为后面相对路径的操作
+popd
+:: ------------------------------------------------------------
+:: 7. 恢复用户配置 portable.ini (在注入前恢复，以免被覆盖)
+:: ------------------------------------------------------------
+if exist "%CORE_BAK%\portable.ini" (
+    copy /y "%CORE_BAK%\portable.ini" "%CORE_DIR%\" >nul
+)
+
+:: ------------------------------------------------------------
+:: 9. 删除备份目录（确认注入步骤已走过，安全删除）
+:: ------------------------------------------------------------
+rmdir /s /q "%CORE_BAK%"
+
+echo ========================================
+echo 更新完成！请运行 core\zen.exe 测试。
+echo ========================================
+pause
+exit /b 0
+
+```
