@@ -12,9 +12,9 @@ tag:
   - 文件管理器
   - 配置
   - 更新
-description: Total Commander 顶部菜单栏与工具栏配置方法，以及从 11.03 升级到 11.57 的更新文件清单等。
+description: Total Commander 顶部菜单栏与工具栏配置方法，以及版本升级更新。
 ---
-本文以研究**飞扬时空定制版**为例，记录学习过程。
+本文以**飞扬时空定制版**为例，记录研究学习过程。
 
 ## 一、定义顶部菜单栏
 
@@ -101,7 +101,19 @@ RedirectSection=%COMMANDER_PATH%\User\User.ini
 | `WCMICONS.INC` |
 | `wincmd.key` |
 
-## 四、TC高级定制版
+## 四、TC中文高级定制版
 
-https://wwbcy.lanzouu.com/b00g471bof ，密码:16vj
+@飞扬时空
+百度网盘：https://yun.baidu.com/s/1cp9zuY
+天翼云盘：https://cloud.189.cn/t/qeqaMzeAVfmy
+蓝奏云盘：https://www.lanzoui.com/b405514/
+
+@广州·狐仙
+永硕E盘：https://asongson.ysepan.com
+
+@nbhai2018
+无忧论坛：https://bbs.wuyou.net/forum.php?mod=viewthread&tid=430991
+
+备份下载
+蓝奏云盘：https://wwbcy.lanzouu.com/b00g471bof ，密码:16vj
 
