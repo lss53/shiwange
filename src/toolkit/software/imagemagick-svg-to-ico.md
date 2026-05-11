@@ -76,7 +76,8 @@ magick -background none "icon.svg" ^
 
 #### 方案三：交互式批处理脚本
 
-为了更方便地使用，您可以将以下代码保存为一个 `.bat` 文件（如 `Create-ICO.bat`），之后只需将 SVG 文件拖放到该脚本上即可自动生成 ICO。
+为了更方便地使用，您可以将以下代码保存为一个 `.bat` 文件（如 `Create-ICO.bat`），编码修改为`简体中文(GBK,GB2312)`并保存，之后只需将 SVG 文件拖放到该脚本上即可自动生成 ICO。
+> 以 Notepad4 为例设置编码，文件 → 编码 → 更多（或按F9），选择`简体中文(GBK,GB2312)`
 
 ::: details 交互式 BAT 脚本
 ```bat
@@ -90,30 +91,30 @@ set "output_ico=app.ico"
 :: 处理拖放文件
 if not "%~1"=="" (
     set "svgfile=%~1"
-    echo Using dragged file: !svgfile!
+    echo 使用拖放文件：!svgfile!
 ) else (
-    echo No file dragged, using default: !svgfile!
+    echo 未拖放文件，使用默认值：!svgfile!
 )
 
 :: 验证输入文件是否存在
 if not exist "!svgfile!" (
-    echo ERROR: Input file "!svgfile!" not found!
+    echo 错误：找不到输入文件 "!svgfile!"！
     pause
     exit /b
 )
 
 echo.
 echo =================================
-echo ICO Generation Tool
-echo Input SVG: !svgfile!
+echo ICO 生成工具
+echo 输入 SVG：!svgfile!
 echo =================================
 echo.
 
-set /p output_ico="Enter output ICO name (press Enter for default: %output_ico%): "
+set /p output_ico="请输入输出 ICO 文件名（按回车键使用默认值：%output_ico%）："
 if "!output_ico!"=="" set "output_ico=app.ico"
 
 echo.
-echo Generating "!output_ico!"...
+echo 正在生成 "!output_ico!"...
 
 :: 使用一步到位的方法生成ICO
 magick -background none "!svgfile!" ^
@@ -121,26 +122,26 @@ magick -background none "!svgfile!" ^
 
 if errorlevel 1 (
     echo.
-    echo ERROR: Failed to generate ICO. Please check if ImageMagick is installed and in PATH.
+    echo 错误：生成 ICO 失败。请检查是否已安装 ImageMagick 并将其添加到了 PATH 环境变量中。
     pause
     exit /b 1
 )
 
 echo.
 echo =================================
-echo ICO generation complete!
-echo Output file: !output_ico!
+echo ICO 生成完成！
+echo 输出文件：!output_ico!
 echo =================================
 echo.
-echo Verifying ICO content:
+echo 正在验证 ICO 内容：
 magick identify -format "%%f: %%wx%%h (%%m)\n" "!output_ico!"
 echo.
 
-set /p open="Open file location? (y/n, default=n): "
+set /p open="是否打开文件所在位置？(y/n，默认为n)："
 if /i "!open!"=="y" explorer /select,"!output_ico!"
 
 echo.
-echo Done! Press any key to exit.
+echo 完成！按任意键退出。
 pause >nul
 ```
 :::
