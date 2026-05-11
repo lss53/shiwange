@@ -79,6 +79,15 @@ setup.exe /configure Configuration.xml
 ```
 :::
 
-## 官方帮助文档
+## 附件
 
 - [Office 部署工具 (ODT) 概述](https://learn.microsoft.com/zh-cn/microsoft-365-apps/deploy/overview-office-deployment-tool)
+
+- [Office Installer+](https://msfree.su/index.php?threads/705) 是一款由俄罗斯开发者 Ratiborus 制作的 Office 部署工具，被网友 "[W](https://shui2012.ysepan.com)" 汉化。  
+   使用示例：安装 Office 选 `O365ProPlus Retail` ，许可和密钥选 `O365ProPlusR_Subscription2`。
+> 如果打开是俄语，打开.ini 配置文件 ，将“GUI_Lang = ru”值改成 en。
+
+- [All-In-One-Version-KL](https://github.com/massgravel/Microsoft-Activation-Scripts)微软激活脚本多合一，被网友 "[magicgenius](https://bbs.wuyou.net/forum.php?mod=viewthread&tid=442318)" 汉化，下载地址：https://magicgenius.lanzoue.com/b08yudl3a 密码:magicgenius
+
+
+
