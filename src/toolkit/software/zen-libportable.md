@@ -256,7 +256,7 @@ if exist "%CORE_BAK%\portable.ini" (
 :: 9. 删除备份目录和zen.installer.exe（确认注入步骤已走过，安全删除）
 :: ------------------------------------------------------------
 rmdir /s /q "%CORE_BAK%"
-rmdir /s /q "%INSTALLER%"
+del /f /q "%INSTALLER%"
 
 echo ========================================
 echo 更新完成！请运行 core\zen.exe 测试。
