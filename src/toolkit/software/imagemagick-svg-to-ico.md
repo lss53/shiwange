@@ -77,11 +77,12 @@ magick -background none "icon.svg" ^
 #### 方案三：交互式批处理脚本
 
 为了更方便地使用，您可以将以下代码保存为一个 `.bat` 文件（如 `Create-ICO.bat`），编码修改为`简体中文(GBK,GB2312)`并保存，之后只需将 SVG 文件拖放到该脚本上即可自动生成 ICO。
-> 以 Notepad4 为例设置编码，文件 → 编码 → 更多（或按F9），选择`简体中文(GBK,GB2312)`
+> 以 Notepad4 为例设置编码，文件 → 编码 → UTF-8。 ~~文件 → 编码 → 更多（或按F9），选择`简体中文(GBK,GB2312)`~~
 
 ::: details 交互式 BAT 脚本
 ```bat
 @echo off
+@chcp 65001 >nul
 setlocal enabledelayedexpansion
 
 :: 默认输入和输出文件名
@@ -129,8 +130,7 @@ if errorlevel 1 (
 
 echo.
 echo =================================
-echo ICO 生成完成！
-echo 输出文件：!output_ico!
+echo "!output_ico!" 已生成！
 echo =================================
 echo.
 echo 正在验证 ICO 内容：
