@@ -47,7 +47,7 @@ https://github.com/OsbertWang/install-latex-guide-zh-cn
 > texdoc tabularray    # 打开 tabularray 的官方文档
 > texdoc -l amsmath    # 列出 amsmath 相关的所有文档，手动选择
 > ```
-> 关于 `texdoc` 的更多用法，可参考：[texdoc 使用说明](#texdoc-使用说明)（见下文）
+> 关于 `texdoc` 的更多用法，可参考：[texdoc 使用说明](#texdoc 使用说明)（见下文）
 
 ## 四、ElegantBook 模板使用笔记
 
