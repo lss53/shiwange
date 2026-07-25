@@ -47,7 +47,7 @@ https://github.com/OsbertWang/install-latex-guide-zh-cn
 > texdoc tabularray    # 打开 tabularray 的官方文档
 > texdoc -l amsmath    # 列出 amsmath 相关的所有文档，手动选择
 > ```
-> 关于 `texdoc` 的更多用法，可参考：[texdoc 使用说明](#texdoc 使用说明)（见下文）
+> 关于 `texdoc` 的更多用法，可参考：[texdoc 使用说明](#texdoc-usage)（见下文）
 
 ## 四、ElegantBook 模板使用笔记
 
@@ -126,7 +126,7 @@ https://github.com/OsbertWang/install-latex-guide-zh-cn
 
 > **注意**：300 DPI 的前提是图片本身有足够的像素。例如，要打印 A4 幅面的清晰图片，原始像素需达到约 **2480 × 3508**。如果原图只有几百像素宽，强行拉到 300 DPI 依然会模糊。
 
-## 八、texdoc 使用说明
+## 八、texdoc 使用说明 {#texdoc-usage}
 
 `texdoc` 是 TeX Live 自带的一个命令行工具，用于快速查看本地已安装的宏包和文档类的说明文档（通常是 `.pdf` 格式）。
 
