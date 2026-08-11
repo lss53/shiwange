@@ -23,24 +23,20 @@ description: 本文整理并分享了一系列适用于 Tvbox、海阔视界和�
 ### 综合接口源
 
 - **肥猫**
-  - `https://xn--z7x900a.com`
+  - `http://肥猫.net/tv`
+  - `http://hello.肥猫.net`
+  - `https://w.junce.dpdns.org/fm.gif`
   - <https://pd.qq.com/s/2wzw94whf>
 
 - **饭太硬**
-  - `http://www.饭太硬.com/tv`
+  - `http://www.饭太硬.cc/tv`
   - `http://fty.xxooo.cf/tv`
 
 - **王二小**
   - `http://tvbox.王二小放牛娃.top`
 
-- **潇洒**
-  - `https://9877.kstore.space/AnotherD/api.json`
-
 - **摸鱼儿**
   - `http://我不是.摸鱼儿.top`
-
-- **小虎斑**
-  - `http://hb.小虎斑.site:25252/仅供测试`
 
 - **欧歌**
   - `http://tv.nxog.top/m`
@@ -67,8 +63,10 @@ description: 本文整理并分享了一系列适用于 Tvbox、海阔视界和�
 
 - **dlgt7 (接口合集)**
   ::: tip
-  该仓库包含大量接口源，建议访问查看。
+  下面仓库包含大量接口源，建议访问查看。
   :::
+  - <https://github.com/qist/tvbox>
+  - <https://github.com/tushen6/Tomorrow>
   - <https://github.com/dlgt7/TVbox-interface>
 
 ### 辅助工具
@@ -79,12 +77,10 @@ description: 本文整理并分享了一系列适用于 Tvbox、海阔视界和�
 ## 猫爪（猫影视）源
 
 1. 裤佬
-- https://github.com/Jsnzkpg/stymei
+- https://github.com/Jsnzkpg
 
 2. 王二小放牛娃
-- https://github.com/git8477/wexfnw
 - `https://9280.kstore.vip/cat/index.js.md5`
-- `http://wexfnw:wexfnw@cat.xn--4kq62z5rby2qupq9ub.top/index.js.md5`
 
 3. Darklessing
 - https://github.com/Darklessing/catvod
