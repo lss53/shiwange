@@ -37,7 +37,7 @@ description: 详细介绍 BPB Panel 自动化部署与 CFnew 手动搭建流程�
 1. 访问 [Wizard](https://wizard.bpb-panel.workers.dev)。  
 2. [创建令牌](https://dash.cloudflare.com/profile/api-tokens?permissionGroupKeys=%5B%7B%22key%22%3A%22workers_scripts%22%2C%22type%22%3A%22edit%22%7D%2C%7B%22key%22%3A%22workers_kv_storage%22%2C%22type%22%3A%22edit%22%7D%2C%7B%22key%22%3A%22page%22%2C%22type%22%3A%22edit%22%7D%2C%7B%22key%22%3A%22dns%22%2C%22type%22%3A%22edit%22%7D%2C%7B%22key%22%3A%22user_details%22%2C%22type%22%3A%22read%22%7D%5D&accountId=*&zoneId=all&name=BPB-Wizard)：  
    点击 “Continue to summary（继续以显示摘要）”，然后点击 “Create Token（创建令牌）”并复制令牌。  
-3. 将令牌粘贴到**钥匙图标**后的输入框中，选择部署方式（推荐选择 **Cloudflare Pages**，更简单），然后执行安装。  
+3. 将令牌粘贴到**钥匙图标**后的输入框中，选择部署方式（推荐选择 **Cloudflare Pages**，不会出现`-1`），然后执行安装。  
 4. 等待几秒完成安装。页面会显示你的**面板地址**，请立即保存。此链接可用于后续一键重装。**请勿将此链接分享给他人**。
 ---
 ### 第三步：初始配置
