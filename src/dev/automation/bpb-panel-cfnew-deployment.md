@@ -14,8 +14,8 @@ tag:
 description: 详细介绍 BPB Panel 自动化部署与 CFnew 手动搭建流程，涵盖环境配置、KV 绑定及客户端使用，助你快速构建 Cloudflare Worker 代理服务。
 ---
 
-# BPB Panel 快速入门（三步完成部署）
-## 第一步：准备工作
+## BPB Panel 快速入门（三步完成部署）
+### 第一步：准备工作
 1. **Cloudflare 账户**：准备一个已验证邮箱的 [Cloudflare 账户](https://dash.cloudflare.com/sign-up)。  
 2. **安装渠道**：
    - **Web 版（强烈推荐）**：访问 [https://wizard.bpb-panel.workers.dev](https://wizard.bpb-panel.workers.dev) 进行一键安装。
@@ -32,7 +32,7 @@ description: 详细介绍 BPB Panel 自动化部署与 CFnew 手动搭建流程�
 > - 必须从 GitHub Release 或 F‑Droid 安装 Termux，从 Google Play 安装可能导致兼容性问题。  
 > - 安装前请**断开所有 VPN**。
 ---
-## 第二步：执行安装
+### 第二步：执行安装
 以 **Web 版** 为例：
 1. 访问 [Wizard](https://wizard.bpb-panel.workers.dev)。  
 2. [创建令牌](https://dash.cloudflare.com/profile/api-tokens?permissionGroupKeys=%5B%7B%22key%22%3A%22workers_scripts%22%2C%22type%22%3A%22edit%22%7D%2C%7B%22key%22%3A%22workers_kv_storage%22%2C%22type%22%3A%22edit%22%7D%2C%7B%22key%22%3A%22page%22%2C%22type%22%3A%22edit%22%7D%2C%7B%22key%22%3A%22dns%22%2C%22type%22%3A%22edit%22%7D%2C%7B%22key%22%3A%22user_details%22%2C%22type%22%3A%22read%22%7D%5D&accountId=*&zoneId=all&name=BPB-Wizard)：  
@@ -40,7 +40,7 @@ description: 详细介绍 BPB Panel 自动化部署与 CFnew 手动搭建流程�
 3. 将令牌粘贴到**钥匙图标**后的输入框中，选择部署方式（推荐选择 **Cloudflare Workers**，更简单），然后执行安装。  
 4. 等待几秒完成安装。页面会显示你的**面板地址**，请立即保存。此链接可用于后续一键重装。**请勿将此链接分享给他人**。
 ---
-## 第三步：初始配置
+### 第三步：初始配置
 1. 使用面板地址登录。首次需要设置**管理员密码**，请立即保存。  
 2. 在 **管理员（Admin）** 中：
    - **设置（Settings）**：
@@ -65,14 +65,14 @@ description: 详细介绍 BPB Panel 自动化部署与 CFnew 手动搭建流程�
    - 使用 **Best Ping（最佳延迟）** 线路，让客户端自动在各端口间测速并选择最快的；  
    - 或手动测试，选择在你这边最稳定、最快的端口。
 ---
-## 参考资源
+### 参考资源
 - https://www.youtube.com/watch?v=7HyZCugDwu8  
 - https://hanscn.com/post/bpb  
 - https://www.kekehub.com/2025/09/bpbnat.html  
 - https://bia-pain-bache.github.io/BPB-Worker-Panel/installation/pages-manual
 ---
-# CFnew 快速入门（四步完成部署）
-## 第一步：准备工作与代码部署
+## CFnew 快速入门（四步完成部署）
+### 第一步：准备工作与代码部署
 1. **Cloudflare 账户**：准备一个已验证邮箱的 [Cloudflare 账户](https://dash.cloudflare.com/sign-up)。  
 2. **创建 Worker 项目**：
    - 路径：控制台 → 计算 → Workers 和 Pages → 创建应用程序。  
@@ -83,7 +83,7 @@ description: 详细介绍 BPB Panel 自动化部署与 CFnew 手动搭建流程�
    - 打开 [cfnew](https://github.com/byjoey/cfnew) 仓库，找到并单击文件 **“少年你相信光吗”**，复制全部代码。  
    - 将复制的代码粘贴到 `worker.js` 中，点击右上角 **部署**。
 ---
-## 第二步：配置环境变量
+### 第二步：配置环境变量
 1. 进入 Worker 项目 → **设置** → **变量与密钥**。  
 2. 点击 **添加变量**：
    - **变量名称**：输入 `u`。  
@@ -91,16 +91,16 @@ description: 详细介绍 BPB Panel 自动化部署与 CFnew 手动搭建流程�
      - *生成方法*：打开 v2rayN → 配置项 → 添加 VMess → 点击“用户ID”旁的生成按钮。  
 3. 点击 **添加1个变量** 并保存。
 ---
-## 第三步：创建 Workers KV 存储
+### 第三步：创建 Workers KV 存储
 1. 路径：控制台 → 存储与数据库 → **Workers KV**。  
 2. 点击 **Create Instance（创建实例）**。  
 3. 输入命名空间名称（可自定义），点击 **创建**。
 ---
-## 第四步：绑定 KV 与订阅配置
+### 第四步：绑定 KV 与订阅配置
 1. 返回 Worker 项目 → **设置** → **绑定**。  
 2. 点击 **添加绑定**：
    - 选择类型：**KV 命名空间**。  
-   - 变量名称：输入 `C`（必须为 `C`）。  
+   - 变量名称：输入 `C`（大写）。  
    - KV 命名空间：选择第三步创建的命名空间。  
    - 点击 **添加绑定** 并保存。  
 3. **开始使用**：
@@ -110,6 +110,6 @@ description: 详细介绍 BPB Panel 自动化部署与 CFnew 手动搭建流程�
    - 找到 **选择客户端**，点击 `V2RAY` 复制订阅链接。  
    - 下载 [v2rayN](https://github.com/2dust/v2rayN/releases/latest)，导入订阅链接。
 ---
-## 参考资源
+### 参考资源
 - https://www.youtube.com/watch?v=7JpLr_dz0x0
 
