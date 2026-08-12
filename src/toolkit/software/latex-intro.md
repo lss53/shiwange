@@ -2,7 +2,7 @@
 title: LaTeX 入门
 shortTitle:
 date: 2026-07-25
-icon: fa-brands fa-tex
+icon: fa-solid fa-file-pdf
 order: 13
 category:
   - 软件工具
