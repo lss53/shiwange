@@ -77,9 +77,9 @@ export const zhNavbar = navbar([
   "/movies",
 
   // 独立的知识库链接
-  {
-    text: "知识库",
-    icon: "fas fa-book-open",
-    link: "https://kb.211777.xyz", 
-  },
+  // {
+  //   text: "知识库",
+  //   icon: "fas fa-book-open",
+  //   link: "https://kb.211777.xyz", 
+  // },
 ]);
