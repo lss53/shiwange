@@ -40,15 +40,5 @@ projects:
     desc: 在 60 秒内学会 Markdown
     link: https://commonmark.org/help/
 
-  - icon: book
-    name: 人教教材
-    desc: 中小学教材电子版
-    link: https://jc.pep.com.cn/
-
-  - icon: fas fa-building-columns
-    name: 取景框看世界
-    desc: 复旦大学博士，你的B站大学辅导员
-    link: https://space.bilibili.com/40427625
-
 footer: '由 <a href="https://vuepress.vuejs.org/zh/" target="_blank">VuePress</a> 驱动'
 ---
