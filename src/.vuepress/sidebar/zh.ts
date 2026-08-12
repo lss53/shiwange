@@ -23,7 +23,8 @@ export const zhSidebar = sidebar({
   // ===== 生活志 /life/ =====
   // 为 life 下的每个子目录定义规则
   "/life/cooking/": "structure",
-  "/life/guides/": "structure",
+  "/life/health/": "structure",
+  "/life/travel/": "structure",
   "/life/gardening/": "structure",
 
 

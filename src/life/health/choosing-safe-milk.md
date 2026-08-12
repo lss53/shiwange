@@ -5,7 +5,7 @@ date: 2024-04-20
 icon: fas fa-cow
 order: 2
 category:
-  - 攻略
+  - 健康生活
 tag:
   - 牛奶
   - 食品安全

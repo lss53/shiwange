@@ -3,9 +3,9 @@ title: 如何使用职工医保个人账户为家人代缴城乡居民医保
 shortTitle: 医保个账代缴居民医保
 date: 2025-01-07
 icon: fas fa-notes-medical
-order: 4
+order: 3
 category:
-  - 攻略
+  - 健康生活
 tag:
   - 医保
   - 职工医保

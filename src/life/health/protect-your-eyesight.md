@@ -3,9 +3,9 @@ title: 儿童近视防控与科学配镜全攻略
 shortTitle: 近视防控配镜
 date: 2025-09-12
 icon: fa-solid fa-glasses
-order: 5
+order: 4
 category:
-  - 攻略
+  - 健康生活
 tag:
   - 近视防控
   - 户外活动

@@ -1,6 +1,6 @@
 ---
-title: 攻略
-icon: fa-solid fa-book-atlas
+title: 出行攻略
+icon: fa-solid fa-plane-departure
 article: false
 index: false
 comment: false

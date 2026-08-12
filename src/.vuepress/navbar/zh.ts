@@ -4,10 +4,10 @@ export const zhNavbar = navbar([
   // 主页链接
   "/",
   
-  // “格物志” 顶级下拉菜单
+  // “知识库” 顶级下拉菜单
   {
-    text: "格物志",
-    icon: "fas fa-compass-drafting", // 一个代表“格物”的图标
+    text: "知识库",
+    icon: "fas fa-layer-group",
     children: [
       {
         text: "工具箱", // 分组标题 (不可点击)
@@ -41,12 +41,12 @@ export const zhNavbar = navbar([
           {
             text: "网站搭建",
             icon: "fas fa-sitemap",
-            link: "/dev/website/", // 文件夹名建议简化为 website
+            link: "/dev/website/",
           },
           {
             text: "自动化脚本",
             icon: "fas fa-robot",
-            link: "/dev/automation/", // 文件夹名建议简化为 automation
+            link: "/dev/automation/",
           },
         ],
       },
@@ -54,17 +54,22 @@ export const zhNavbar = navbar([
         text: "生活志",
         children: [
           {
-            text: "攻略",
-            icon: "fa-solid fa-book-atlas",
-            link: "/life/guides/",
+            text: "健康生活",
+            icon: "fa-solid fa-heart-pulse",
+            link: "/life/health/",
           },
           {
-            text: "烹饪",
+            text: "出行攻略",
+            icon: "fa-solid fa-plane-departure",
+            link: "/life/travel/",
+          },
+          {
+            text: "烹饪美食",
             icon: "fa-solid fa-kitchen-set",
             link: "/life/cooking/",
           },
           {
-            text: "种植",
+            text: "种植技术",
             icon: "fa-solid fa-trowel",
             link: "/life/gardening/",
           },
@@ -76,10 +81,10 @@ export const zhNavbar = navbar([
   // 独立的观影记录链接
   "/movies",
 
-  // 独立的知识库链接
+  // 独立的其他链接
   // {
-  //   text: "知识库",
+  //   text: "",
   //   icon: "fas fa-book-open",
-  //   link: "https://kb.211777.xyz", 
+  //   link: "https://xxxxx.xxx",
   // },
 ]);

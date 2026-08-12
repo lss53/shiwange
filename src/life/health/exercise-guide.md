@@ -3,9 +3,9 @@ title: 个人版锻炼指南
 shortTitle: 锻炼指南
 date: 2026-04-16
 icon: fa-solid fa-bicycle
-order: 7
+order: 6
 category:
-  - 攻略
+  - 健康生活
 tag:
   - 健康
   - 运动

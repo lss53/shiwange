@@ -3,9 +3,9 @@ title: 膳食指南
 shortTitle: 
 date: 2026-03-29
 icon: fa-solid fa-bowl-food
-order: 6
+order: 5
 category:
-  - 攻略
+  - 健康生活
 tag:
   - 健康饮食
   - 膳食指南
