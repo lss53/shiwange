@@ -3,7 +3,7 @@ title: Total Commander 配置与更新
 shortTitle: TC 配置与更新
 date: 2026-05-10
 icon: fa-regular fa-folder-open
-order: 12
+order: 9
 category:
   - 开发·工具
 tag:

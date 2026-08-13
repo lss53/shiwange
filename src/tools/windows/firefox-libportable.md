@@ -3,7 +3,7 @@ title: 使用 libportable 将 Firefox 便携化
 shortTitle: 制作 Firefox 便携版
 date: 2026-05-10
 icon: fa-brands fa-firefox-browser
-order: 11
+order: 8
 category:
   - 软件·应用
 tag:

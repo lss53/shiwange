@@ -3,7 +3,7 @@ title: "ImageMagick 实战：从 SVG 一键生成多尺寸 ICO 图标"
 shortTitle: ImageMagick 生成 ICO
 date: 2025-04-17
 icon: fa-solid fa-icons
-order: 7
+order: 6
 category:
   - 软件·应用
 tag:

@@ -3,7 +3,7 @@ title: 台词字幕拼图
 shortTitle: 字幕拼图
 date: 2026-04-27
 icon: fa-solid fa-closed-captioning
-order: 10
+order: 7
 category:
   - 软件·应用
 tag:
