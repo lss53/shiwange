@@ -1,6 +1,6 @@
 ---
-title: Windows Apps
-icon: fab fa-windows
+title: Environment & Languages
+icon: fa-solid fa-cubes
 article: false
 index: false
 comment: false
