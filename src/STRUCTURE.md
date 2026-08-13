@@ -21,7 +21,7 @@
 
 ```
 src/
-├── dev/                              # 开发·工具（18篇）
+├── dev/                              # 开发·工具（18 → 19篇）
 │   ├── env/                          # 环境与语言（6篇）
 │   │   ├── chocolatey.md
 │   │   ├── nvs.md
@@ -37,14 +37,15 @@ src/
 │   │   ├── npm-image-host.md
 │   │   ├── shields-io-badges.md
 │   │   └── vuepress-neodb-integration.md
-│   └── automation/                   # 自动化与云脚本（5篇）
+│   └── automation/                   # 自动化与云脚本（5 篇）
 │       ├── paddleocr-guide.md
 │       ├── tencent-ocr-guide.md
 │       ├── bpb-panel-cfnew-deployment.md
 │       ├── quark-autocheckin.md
-│       └── wechat-dual-cover.md
-├── tools/                            # 软件·应用（14篇）
-│   ├── windows/                      # Windows实用工具（9篇）
+│       ├── wechat-dual-cover.md
+│       └── cloud-parser.md           # ← 修改
+├── tools/                            # 软件·应用（14 → 16篇）
+│   ├── windows/                      # Windows实用工具（9 → 11篇）
 │   │   ├── tc-config-update.md
 │   │   ├── proxifier-guide.md
 │   │   ├── firefox-libportable.md
@@ -53,7 +54,9 @@ src/
 │   │   ├── ode-downloader.md
 │   │   ├── wechat-video-downloader.md
 │   │   ├── asus-fx-pro-ssd-upgrade.md
-│   │   └── windows-10-iot-ltsc.md
+│   │   ├── windows-10-iot-ltsc.md
+│   │   ├── pdf-page-cutter.md        # ← 新增
+│   │   └── pdf-tools-guide.md        # ← 新增
 │   └── network/                      # 通信与网络增强（5篇）
 │       ├── qauxiliary-xposed-module.md
 │       ├── liteloaderqqnt.md
@@ -78,32 +81,12 @@ src/
 │   │   └── 12306-points-tickets.md
 │   └── gardening/                    # 种植技术（1篇）
 │       └── vegetables.md
-└── movies.md                           # 影单（独立入口）
+└── movies.md                         # 影单（独立入口）
 ```
 
 ---
 
-## 三、分类迁移对照表（旧 → 新）
-
-> 用于理解文件从哪里移动过来的
-
-| 旧分类 | 新分类 | 文件数 | 目标目录 |
-|:-------|:-------|:------:|:---------|
-| `Office` | 开发·工具 | 1 | `dev/env/` |
-| `Windows技巧` | 软件·应用 | 2 | `tools/windows/` |
-| `Windows软件`（开发类） | 开发·工具 | 6 | `dev/env/` |
-| `Windows软件`（日常类） | 软件·应用 | 7 | `tools/windows/` |
-| `网站搭建` | 开发·工具 | 7 | `dev/website/` |
-| `自动化脚本` | 开发·工具 | 5 | `dev/automation/` |
-| `Android应用` | 软件·应用 | 5 | `tools/network/` |
-| `烹饪` | 生活·指南 | 5 | `life/cooking/` |
-| `健康生活` | 生活·指南 | 6 | `life/health/` |
-| `出行攻略` | 生活·指南 | 1 | `life/travel/` |
-| `种植技术` | 生活·指南 | 1 | `life/gardening/` |
-
----
-
-## 四、新增文章发布检查清单
+## 三、新增文章发布检查清单
 
 > 每次新增文章时，按以下步骤操作，确保一致性
 
@@ -131,17 +114,18 @@ src/
 
 ---
 
-## 五、常用维护命令
+## 四、常用维护命令
 
 | 操作 | 命令 |
 |:-----|:-----|
 | 本地预览 | `pnpm docs:dev` |
 | 构建生产版本 | `pnpm docs:build` |
 | 强制清理缓存 | `pnpm docs:clean-dev` |
+| 清理缓存 | rm -rf src/.vuepress/.cache src/.vuepress/.temp |
 
 ---
 
-## 六、重要配置文件索引
+## 五、重要配置文件索引
 
 | 文件路径 | 用途 |
 |:---------|:-----|
@@ -152,17 +136,7 @@ src/
 
 ---
 
-## 七、注意事项
-
-1. **`category` 字段格式**：必须是**单行字符串**（如 `category: 开发·工具`），不要使用多行列表格式（`category:\n  - xxx`）。
-2. **`order` 字段**：控制同一子目录下文章在侧边栏/列表中的排序，数字越小越靠前。
-3. **短标题（`shortTitle`）**：用于导航或卡片中显示，若省略则使用 `title`。
-4. **图标规范**：优先使用 Font Awesome 免费图标，格式为 `fa-solid fa-xxx` 或 `fa-brands fa-xxx`。
-5. **URL 规则**：VuePress 默认使用文件名作为 URL（如 `chocolatey.md` → `/dev/env/chocolatey/`）。移动文件后必须配置 301 重定向。
-
----
-
-## 八、未来扩展预留
+## 六、未来扩展预留
 
 | 目录 | 可扩展方向 |
 |:-----|:-----------|
@@ -175,3 +149,23 @@ src/
 | `life/health/` | 新增心理健康、睡眠管理、常见病科普 |
 | `life/travel/` | 新增自驾攻略、住宿推荐、行程规划 |
 | `life/gardening/` | 新增花卉种植、果树修剪、有机堆肥 |
+
+---
+
+## 七、分类迁移对照表（旧 → 新）
+
+> 2026/08/13 重构
+
+| 旧分类 | 新分类 | 文件数 | 目标目录 |
+|:-------|:-------|:------:|:---------|
+| `Office` | 开发·工具 | 1 | `dev/env/` |
+| `Windows技巧` | 软件·应用 | 2 | `tools/windows/` |
+| `Windows软件`（开发类） | 开发·工具 | 6 | `dev/env/` |
+| `Windows软件`（日常类） | 软件·应用 | 7 | `tools/windows/` |
+| `网站搭建` | 开发·工具 | 7 | `dev/website/` |
+| `自动化脚本` | 开发·工具 | 5 | `dev/automation/` |
+| `Android应用` | 软件·应用 | 5 | `tools/network/` |
+| `烹饪` | 生活·指南 | 5 | `life/cooking/` |
+| `健康生活` | 生活·指南 | 6 | `life/health/` |
+| `出行攻略` | 生活·指南 | 1 | `life/travel/` |
+| `种植技术` | 生活·指南 | 1 | `life/gardening/` |
