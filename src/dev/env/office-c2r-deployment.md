@@ -3,7 +3,7 @@ title: Office C2R (Click-to-Run) 自定义安装与部署指南
 shortTitle: Office C2R 自定义安装
 date: 2025-01-06
 icon: fa-brands fa-microsoft
-order: 1
+order: 2
 category:
   - 开发·工具
 tag:

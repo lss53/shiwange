@@ -3,7 +3,7 @@ title: LaTeX 入门
 shortTitle:
 date: 2026-07-25
 icon: fa-solid fa-file-pdf
-order: 13
+order: 6
 category:
   - 开发·工具
 tag:

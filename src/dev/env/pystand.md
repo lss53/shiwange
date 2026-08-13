@@ -3,7 +3,7 @@ title: PyStand：Python 独立部署环境
 shortTitle: PyStand
 date: 2026-02-07
 icon: fa-brands fa-python
-order: 9
+order: 5
 category:
   - 开发·工具
 tag:

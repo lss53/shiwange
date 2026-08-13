@@ -3,7 +3,7 @@ title: LiteLoaderQQNT：为 QQ NT 版设计的强大插件加载器
 shortTitle: LiteLoaderQQNT
 date: 2024-10-18
 icon: fa-solid fa-puzzle-piece
-order: 2
+order: 3
 category:
   - 软件·应用
 tag:

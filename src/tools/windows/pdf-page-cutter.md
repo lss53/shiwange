@@ -17,7 +17,6 @@ description: 一款纯前端、无需安装的 PDF 页面裁切工具，通过�
 ## PDF 页面自由裁切工具
 
 为了更方便地使用，您可以将以下代码保存为一个 .html 文件（如 pdf-page-cutter.html），双击 HTML 文件，在浏览器中直接打开。
-::: PDF 页面自由裁切工具代码
 
 ```html
 <!DOCTYPE html>
@@ -837,8 +836,8 @@ description: 一款纯前端、无需安装的 PDF 页面裁切工具，通过�
   </script>
 </body>
 </html>
-
 ```
-:::
+
+## PDF24 Tools
 
 > 更优秀的工具[PDF24 Tools](https://www.pdf24.org/zh)，如`将PDF页面裁切为两半`，可使用在线版本，也可以下载离线版本使用。
