@@ -5,7 +5,7 @@ date: 2025-10-27
 icon: fa-brands fa-rust
 order: 8
 category:
-- Windows 软件
+  - 开发·工具
 tag:
   - Rust
   - Windows

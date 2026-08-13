@@ -5,7 +5,7 @@ date: 2025-04-17
 icon: fa-solid fa-icons
 order: 7
 category:
-  - Windows 软件
+  - 软件·应用
 tag:
   - ImageMagick
   - 图标

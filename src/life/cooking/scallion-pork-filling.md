@@ -5,7 +5,7 @@ date: 2025-06-07
 icon: fas fa-utensils
 order: 2
 category:
-  - 烹饪
+  - 生活·指南
 tag:
   - 面点
   - 中餐

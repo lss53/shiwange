@@ -5,7 +5,7 @@ date: 2024-10-18
 icon: fa-brands fa-qq
 order: 1
 category:
-  - Android 应用
+  - 软件·应用
 tag:
   - QAuxiliary
   - QNotified

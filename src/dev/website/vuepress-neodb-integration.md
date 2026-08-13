@@ -5,7 +5,7 @@ date: 2025-01-02
 icon: fas fa-film
 order: 6
 category:
-  - 网站搭建
+  - 开发·工具
 tag:
   - VuePress
   - NeoDB

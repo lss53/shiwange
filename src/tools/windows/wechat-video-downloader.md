@@ -5,7 +5,7 @@ date: 2024-10-25
 icon: fa-solid fa-cloud-arrow-down
 order: 4
 category:
-  - Windows 软件
+  - 软件·应用
 tag:
   - 微信视频号
   - 下载工具

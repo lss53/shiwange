@@ -5,7 +5,7 @@ date: 2025-08-30
 icon: fa-solid fa-rocket
 order: 7
 category:
-  - 网站搭建
+  - 开发·工具
 tag:
   - Homer
   - 导航页

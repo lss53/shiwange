@@ -5,7 +5,7 @@ date: 2026-02-07
 icon: fa-brands fa-python
 order: 9
 category:
-  - Windows 软件
+  - 开发·工具
 tag:
   - python
   - 开源

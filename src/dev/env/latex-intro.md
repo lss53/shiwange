@@ -5,7 +5,7 @@ date: 2026-07-25
 icon: fa-solid fa-file-pdf
 order: 13
 category:
-  - 软件工具
+  - 开发·工具
 tag:
   - LaTeX
   - 排版

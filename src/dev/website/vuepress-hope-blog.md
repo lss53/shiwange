@@ -5,7 +5,7 @@ date: 2024-12-23
 icon: fa-solid fa-blog
 order: 3
 category:
-  - 网站搭建
+  - 开发·工具
 tag:
   - VuePress
   - Hope主题

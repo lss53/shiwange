@@ -5,7 +5,7 @@ date: 2025-01-06
 icon: fa-brands fa-microsoft
 order: 1
 category:
-  - Office
+  - 开发·工具
 tag:
   - Microsoft 365
   - Office 2024

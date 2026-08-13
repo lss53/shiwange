@@ -5,7 +5,7 @@ date: 2024-12-04
 icon: fa-solid fa-link
 order: 3
 category:
-  - Android 应用
+  - 软件·应用
 tag:
   - Tvbox
   - 海阔视界

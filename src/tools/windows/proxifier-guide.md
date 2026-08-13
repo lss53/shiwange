@@ -5,7 +5,7 @@ date: 2024-11-24
 icon: fa-solid fa-globe
 order: 5
 category:
-  - Windows 软件
+  - 软件·应用
 tag:
   - Proxifier
   - 代理工具

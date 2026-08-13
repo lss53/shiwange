@@ -10,51 +10,51 @@ export const zhNavbar = navbar([
     icon: "fas fa-layer-group",
     children: [
       {
-        text: "工具箱", // 分组标题 (不可点击)
+        text: "开发·工具", // 分组标题 (不可点击)
         // 分组下的具体链接
         children: [
           {
-            text: "Office",
-            icon: "fab fa-microsoft",
-            link: "/toolkit/office/",
+            text: "环境与语言",
+            icon: "fa-solid fa-cubes",
+            link: "/dev/env/", // 链接到目录
           },
           {
-            text: "Android 应用",
-            icon: "fab fa-android",
-            link: "/toolkit/apps/", // 链接到 /toolkit/apps/ 目录
-          },
-          {
-            text: "Windows 软件",
-            icon: "fab fa-windows",
-            link: "/toolkit/software/",
-          },
-          {
-            text: "Windows 技巧",
-            icon: "fas fa-cogs",
-            link: "/toolkit/windows/",
-          },
-        ],
-      },
-      {
-        text: "技艺录",
-        children: [
-          {
-            text: "网站搭建",
-            icon: "fas fa-sitemap",
+            text: "网站与博客",
+            icon: "fas fa-signs-post",
             link: "/dev/website/",
           },
           {
-            text: "自动化脚本",
+            text: "自动化与云脚本",
             icon: "fas fa-robot",
             link: "/dev/automation/",
           },
         ],
       },
       {
-        text: "生活志",
+        text: "软件·应用",
         children: [
           {
-            text: "健康生活",
+            text: "Windows实用工具",
+            icon: "fa-brands fa-windows",
+            link: "/tools/windows/",
+          },
+          {
+            text: "通信与网络增强",
+            icon: "fa-solid fa-network-wired",
+            link: "/tools/network/",
+          },
+        ],
+      },
+      {
+        text: "生活·指南",
+        children: [
+          {
+            text: "烹饪美食",
+            icon: "fa-solid fa-kitchen-set",
+            link: "/life/cooking/",
+          },
+          {
+            text: "健康指南",
             icon: "fa-solid fa-heart-pulse",
             link: "/life/health/",
           },
@@ -62,11 +62,6 @@ export const zhNavbar = navbar([
             text: "出行攻略",
             icon: "fa-solid fa-plane-departure",
             link: "/life/travel/",
-          },
-          {
-            text: "烹饪美食",
-            icon: "fa-solid fa-kitchen-set",
-            link: "/life/cooking/",
           },
           {
             text: "种植技术",

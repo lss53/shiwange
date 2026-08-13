@@ -5,7 +5,7 @@ date: 2024-10-18
 icon: fa-solid fa-puzzle-piece
 order: 2
 category:
-  - Windows 软件
+  - 软件·应用
 tag:
   - LiteLoaderQQNT
   - QQNT

@@ -5,7 +5,7 @@ date: 2025-04-20
 icon: fa-brands fa-windows
 order: 2
 category:
-  - Windows 技巧
+  - 软件·应用
 tag:
   - LTSC
   - IoT LTSC

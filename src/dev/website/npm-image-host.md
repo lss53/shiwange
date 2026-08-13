@@ -5,7 +5,7 @@ date: 2021-05-02
 icon: fa-brands fa-npm
 order: 1
 category:
-  - 网站搭建
+  - 开发·工具
 tag:
   - npm
   - 图床

@@ -1,6 +1,6 @@
 ---
-title: 生活·指南
-icon: fa-solid fa-leaf
+title: Windows 实用工具
+icon: fa-brands fa-windows
 sidebar: false
 article: false
 index: false

@@ -5,7 +5,7 @@ date: 2026-03-29
 icon: fa-solid fa-bowl-food
 order: 5
 category:
-  - 健康生活
+  - 生活·指南
 tag:
   - 健康饮食
   - 膳食指南

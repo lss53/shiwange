@@ -5,7 +5,7 @@ date: 2024-12-22
 icon: fa-solid fa-box-open
 order: 6
 category:
-  - Windows 软件
+  - 开发·工具
 tag:
   - Chocolatey
   - 包管理器

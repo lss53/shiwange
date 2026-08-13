@@ -5,7 +5,7 @@ date: 2021-08-12
 icon: fa-solid fa-laptop-medical
 order: 1
 category:
-  - Windows 技巧
+  - 软件·应用
 tag:
   - SSD
   - Windows 10

@@ -5,7 +5,7 @@ date: 2026-05-10
 icon: fa-regular fa-folder-open
 order: 12
 category:
-  - 软件工具
+  - 开发·工具
 tag:
   - Total Commander
   - TC

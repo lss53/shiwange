@@ -1,5 +1,5 @@
 ---
-title: 网站搭建
+title: 网站与博客
 icon: fas fa-signs-post
 article: false
 index: false

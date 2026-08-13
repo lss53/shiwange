@@ -5,7 +5,7 @@ date: 2025-09-12
 icon: fa-solid fa-glasses
 order: 4
 category:
-  - 健康生活
+  - 生活·指南
 tag:
   - 近视防控
   - 户外活动

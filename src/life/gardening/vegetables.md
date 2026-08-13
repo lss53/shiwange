@@ -5,7 +5,7 @@ date: 2026-03-26
 icon: fas fa-seedling
 order: 1
 category:
-  - 种植
+  - 生活·指南
 tag:
   - 春季种植
   - 秋季种植

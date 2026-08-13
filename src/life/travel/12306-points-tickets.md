@@ -5,7 +5,7 @@ date: 2024-12-26
 icon: fas fa-ticket-alt
 order: 1
 category:
-  - 出行攻略
+  - 生活·指南
 tag:
   - 火车票
   - 12306

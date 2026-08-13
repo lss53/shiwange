@@ -5,7 +5,7 @@ date: 2024-12-25
 icon: fa-solid fa-compass
 order: 4
 category:
-  - 网站搭建
+  - 开发·工具
 tag:
   - Hugo
   - 导航页

@@ -5,7 +5,7 @@ date: 2026-04-16
 icon: fa-solid fa-bicycle
 order: 6
 category:
-  - 健康生活
+  - 生活·指南
 tag:
   - 健康
   - 运动

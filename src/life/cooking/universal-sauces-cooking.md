@@ -5,7 +5,7 @@ date: 2025-09-18
 icon: fa-solid fa-compass
 order: 5
 category:
-  - 烹饪
+  - 生活·指南
 tag:
   - 调味汁
   - 烹饪技巧

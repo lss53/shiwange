@@ -5,7 +5,7 @@ date: 2025-06-20
 icon: fa-solid fa-cloud
 order: 2
 category:
-  - 自动化脚本
+  - 开发·工具
 tag:
   - Python
   - OCR

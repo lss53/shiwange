@@ -5,7 +5,7 @@ date: 2026-05-10
 icon: fa-brands fa-firefox-browser
 order: 11
 category:
-  - 软件工具
+  - 软件·应用
 tag:
   - Firefox
   - 便携版

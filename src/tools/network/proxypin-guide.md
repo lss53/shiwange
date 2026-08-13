@@ -5,7 +5,7 @@ date: 2025-06-14
 icon: fa-solid fa-network-wired
 order: 4
 category:
-  - Android 应用
+  - 软件·应用
 tag:
   - ProxyPin
   - 抓包工具

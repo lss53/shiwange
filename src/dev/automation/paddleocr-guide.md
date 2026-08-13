@@ -5,7 +5,7 @@ date: 2025-07-13
 icon: fa-solid fa-robot
 order: 4
 category:
-  - 自动化脚本
+  - 开发·工具
 tag:
   - PaddleOCR
   - OCR

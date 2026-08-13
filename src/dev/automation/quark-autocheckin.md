@@ -5,7 +5,7 @@ date: 2025-06-20
 icon: fa-solid fa-robot
 order: 3
 category:
-  - 自动化脚本
+  - 开发·工具
 tag:
   - 夸克网盘
   - 自动签到

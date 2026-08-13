@@ -5,7 +5,7 @@ date: 2021-05-01
 icon: fa-brands fa-node-js
 order: 1
 category:
-  - Windows 软件
+  - 开发·工具
 tag:
   - NVS
   - Node.js

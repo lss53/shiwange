@@ -5,7 +5,7 @@ date: 2025-10-27
 icon: cloud
 order: 5
 category:
-  - 自动化脚本
+  - 开发·工具
 tag:
   - Cloudflare
   - BPB Panel

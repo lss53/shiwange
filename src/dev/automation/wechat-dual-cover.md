@@ -5,7 +5,7 @@ date: 2025-06-11
 icon: fa-brands fa-weixin
 order: 1
 category:
-  - 自动化脚本
+  - 开发·工具
 tag:
   - 微信公众号
   - 封面图

@@ -5,7 +5,7 @@ date: 2025-01-07
 icon: fas fa-notes-medical
 order: 3
 category:
-  - 健康生活
+  - 生活·指南
 tag:
   - 医保
   - 职工医保

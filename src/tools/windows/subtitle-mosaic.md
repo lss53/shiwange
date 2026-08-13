@@ -5,7 +5,7 @@ date: 2026-04-27
 icon: fa-solid fa-closed-captioning
 order: 10
 category:
-  - Windows 软件
+  - 软件·应用
 tag:
   - 视频处理
   - 截图拼接

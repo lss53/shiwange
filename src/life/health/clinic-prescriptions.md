@@ -5,7 +5,7 @@ date: 2024-04-10
 icon: fa-solid fa-file-prescription
 order: 1
 category:
-  - 健康生活
+  - 生活·指南
 tag:
   - 处方
   - 就医

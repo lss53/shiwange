@@ -5,7 +5,7 @@ date: 2024-10-20
 icon: fa-solid fa-cloud-arrow-down
 order: 3
 category:
-  - Windows 软件
+  - 软件·应用
 tag:
   - 百度网盘
   - 下载工具
