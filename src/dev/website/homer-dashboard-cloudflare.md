@@ -75,6 +75,32 @@ Homer 支持通过创建多个 YAML 文件来实现多页面导航。
       # ... 其他主页面链接
     ```
 
+4. **加载 custom.css**:
+    编辑主配置文件 `assets/config.yml` 的 `stylesheet` 部分。
+
+    ```yaml
+    # assets/config.yml
+    stylesheet:  # 加载 custom.css
+      - "assets/custom.css"
+    links:
+      - name: "附加页面"
+        icon: "fas fa-file-alt"
+        url: "#additional-page" # 指向 additional-page.yml
+    
+      # ... 其他主页面链接
+    ```
+
+    编辑层叠样式文件 `assets/custom.css`（由 `custom.css.sample` 重命名而来）。
+
+    ```css
+    /* 将 Tag 从底部上移，避免与快速链接区域重叠 */
+    /* 覆盖默认的 transition: all，只过渡颜色和透明度，避免宽度和内边距变化引起抖动 */
+    body #main-section .tag {
+      bottom: 2.5rem; /* 距离卡片底部 2.5rem（原为 1rem），可根据实际微调 */
+      transition: opacity 0.3s ease, background-color 0.3s; /* 仅对透明度和背景色添加过渡，消除抖动 */
+    }
+    ```
+
 ## 步骤四：本地测试
 
 在部署到线上之前，您可以在本地启动一个简单的 Web 服务器来预览效果。
@@ -113,13 +139,13 @@ git push -u origin main
 
 ### 2. 在 Cloudflare Pages 中部署
 
-1.  登录 [Cloudflare 控制台](https://dash.cloudflare.com/)。
-2.  导航至 `Workers 和 Pages` → `创建应用程序` → `Pages` → `连接到 Git`。
-3.  选择您刚刚创建的 GitHub 仓库并授权。
-4.  在 **配置构建设置** 步骤中：
+-  登录 [Cloudflare 控制台](https://dash.cloudflare.com/)。
+-  导航至 `Workers 和 Pages` → `创建应用程序` → `Pages` → `连接到 Git`。
+-  选择您刚刚创建的 GitHub 仓库并授权。
+-  在 **配置构建设置** 步骤中：
     - **构建命令**：留空（因为 Homer 是预构建的静态文件）。
     - **构建输出目录**：留空或设置为根目录 `/`。
-5.  点击 `保存并部署`。
+-  点击 `保存并部署`。
 
 部署完成后，Cloudflare 将为您提供一个免费的 `.pages.dev` 域名。
 
