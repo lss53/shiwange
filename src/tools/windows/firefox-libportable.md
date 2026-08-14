@@ -17,8 +17,9 @@ description: 使用 libportable 开源库将 Firefox 浏览器便携化，实现
 前往以下`Zen浏览器`任一地址下载 Windows 64bit 安装包：
 - 官方下载页：`https://Zen-browser.app/download/`
 - GitHub Releases：`https://github.com/Zen-browser/desktop/releases`，下载 `Zen.installer.exe`
-前往以下`Firefox浏览器`任一地址下载 Windows 64bit 安装包：
 
+或者前往以下`Firefox浏览器`官方全平台版下载页，下载 `win64/zh-CN/` 安装包：
+- https://ftp.mozilla.org/pub/firefox/releases/
 
 ---
 
